@@ -2270,7 +2270,7 @@ body[data-page="home"] {
 
 .home-faq__media>img {
     width: 100%;
-    height: 610px;
+    height: 710px;
     object-fit: cover;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-soft);
