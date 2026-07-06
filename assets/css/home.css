@@ -2984,3 +2984,153 @@ body[data-page="home"] {
         linear-gradient(90deg, rgba(8, 11, 6, 0.68), rgba(8, 11, 6, 0.54), rgba(8, 11, 6, 0.5)),
         linear-gradient(180deg, rgba(8, 11, 6, 0.34), rgba(8, 11, 6, 0.58)) !important;
 }
+
+/* ===============================
+   HOME PLANNING NOTE
+   =============================== */
+
+.home-planning-note {
+    position: relative;
+    overflow: hidden;
+    background: var(--color-warm-white);
+}
+
+.home-planning-note__layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.82fr) minmax(420px, 1fr);
+    gap: clamp(38px, 6vw, 88px);
+    align-items: center;
+}
+
+.home-planning-note__content {
+    max-width: 680px;
+}
+
+.home-planning-note__content h2 {
+    max-width: 660px;
+}
+
+.home-planning-note__content>p:not(.section-kicker) {
+    max-width: 600px;
+    margin-top: 20px;
+    color: var(--color-muted);
+    font-size: 17px;
+}
+
+.home-planning-note__frames {
+    display: grid;
+    gap: 12px;
+    margin-top: 34px;
+}
+
+.home-planning-note__frames article {
+    display: grid;
+    grid-template-columns: 54px 1fr;
+    gap: 18px;
+    align-items: start;
+    padding: 18px 0;
+    border-top: 1px solid rgba(63, 70, 49, 0.16);
+}
+
+.home-planning-note__frames article:last-child {
+    border-bottom: 1px solid rgba(63, 70, 49, 0.16);
+}
+
+.home-planning-note__frames span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 28px;
+    border-radius: 999px;
+    background: rgba(111, 118, 82, 0.12);
+    color: var(--color-olive-dark);
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+}
+
+.home-planning-note__frames h3 {
+    margin-bottom: 6px;
+    color: var(--color-deep-olive);
+    font-size: 24px;
+}
+
+.home-planning-note__frames p {
+    max-width: 520px;
+    color: var(--color-muted);
+    font-size: 14px;
+}
+
+.home-planning-note__media {
+    position: relative;
+    min-height: 610px;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    background: var(--color-olive-dark);
+    box-shadow: var(--shadow-soft);
+}
+
+.home-planning-note__media::before {
+    content: "";
+    position: absolute;
+    inset: 18px;
+    z-index: 2;
+    border: 1px solid rgba(255, 252, 246, 0.34);
+    border-radius: calc(var(--radius-lg) - 14px);
+    pointer-events: none;
+}
+
+.home-planning-note__media::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+        linear-gradient(180deg, rgba(8, 11, 6, 0.04), rgba(8, 11, 6, 0.24)),
+        rgba(8, 11, 6, 0.08);
+    pointer-events: none;
+}
+
+.home-planning-note__media img {
+    width: 100%;
+    height: 100%;
+    min-height: 610px;
+    object-fit: cover;
+    transition: transform 900ms ease;
+}
+
+.home-planning-note__media:hover img {
+    transform: scale(1.035);
+}
+
+@media (max-width: 980px) {
+    .home-planning-note__layout {
+        grid-template-columns: 1fr;
+    }
+
+    .home-planning-note__media {
+        order: -1;
+        min-height: 480px;
+    }
+
+    .home-planning-note__media img {
+        min-height: 480px;
+    }
+}
+
+@media (max-width: 620px) {
+    .home-planning-note__media {
+        min-height: 360px;
+        border-radius: var(--radius-md);
+    }
+
+    .home-planning-note__media img {
+        min-height: 360px;
+    }
+
+    .home-planning-note__frames article {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
