@@ -1,14 +1,10 @@
-/* ===============================
-   KITCHORA — CONTACT PAGE STYLES
-   =============================== */
+
 
 body[data-page="contact"] {
     background: var(--color-warm-white);
 }
 
-/* ===============================
-   CONTACT HERO
-   =============================== */
+
 
 .contact-hero {
     position: relative;
@@ -118,9 +114,7 @@ body[data-page="contact"] {
     line-height: 1.35;
 }
 
-/* ===============================
-   CONTACT INTRO STRIP
-   =============================== */
+
 
 .contact-intro,
 .request-intro,
@@ -236,9 +230,7 @@ body[data-page="contact"] {
     line-height: 1.55;
 }
 
-/* ===============================
-   REQUEST FORM SECTION
-   =============================== */
+
 
 .contact-request,
 .request-section,
@@ -439,9 +431,7 @@ body[data-page="contact"] {
     text-underline-offset: 4px;
 }
 
-/* ===============================
-   REQUEST GUIDE / STEPS
-   =============================== */
+
 
 .contact-steps,
 .request-steps,
@@ -544,9 +534,7 @@ body[data-page="contact"] {
     background: rgba(8, 11, 6, 0.22);
 }
 
-/* ===============================
-   CONTACT DETAILS PANEL
-   =============================== */
+
 
 .contact-details,
 .contact-options,
@@ -674,9 +662,7 @@ body[data-page="contact"] {
     color: var(--color-muted-sage);
 }
 
-/* ===============================
-   PHOTO SPLIT
-   =============================== */
+
 
 .contact-photo-split,
 .request-photo-split,
@@ -799,9 +785,7 @@ body[data-page="contact"] {
     height: 296px;
 }
 
-/* ===============================
-   CONTACT FAQ
-   =============================== */
+
 
 .contact-faq {
     padding: 112px 0;
@@ -849,9 +833,7 @@ body[data-page="contact"] {
     background: rgba(8, 11, 6, 0.22);
 }
 
-/* ===============================
-   RESPONSIVE
-   =============================== */
+
 
 @media (max-width: 1180px) {
 
@@ -1091,9 +1073,7 @@ body[data-page="contact"] {
     }
 }
 
-/* ==========================================================================
-   Canonical contact sections (current contact.html)
-   ========================================================================== */
+
 
 .contact-clarity {
     padding-top: 34px;
@@ -1429,9 +1409,7 @@ body[data-page="contact"] {
     }
 }
 
-/* ===============================
-   CONTACT CREATIVE HOVER SECTION
-   =============================== */
+
 
 .contact-creative-hover {
     position: relative;
@@ -1517,7 +1495,7 @@ body[data-page="contact"] {
     opacity: 1;
 }
 
-/* photo swap on hover */
+
 .contact-creative-hover__media:hover .contact-creative-hover__photo--back {
     z-index: 3;
     width: 76%;
@@ -1667,9 +1645,7 @@ body[data-page="contact"] {
     }
 }
 
-/* ===============================
-   CONTACT CLARITY — 5 BIG ICON REVEAL
-   =============================== */
+
 
 .contact-clarity--icons {
     position: relative;
@@ -1865,9 +1841,7 @@ body[data-page="contact"] {
     }
 }
 
-/* ===============================
-   CONTACT INFO FLOW — LIGHT FULL WIDTH
-   =============================== */
+
 
 .contact-info-flow {
     position: relative;
@@ -2041,9 +2015,7 @@ body[data-page="contact"] {
     }
 }
 
-/* ===============================
-   CONTACT INFO FLOW — TEXT FIT FIX
-   =============================== */
+
 
 .contact-info-flow__inner {
     grid-template-columns: minmax(260px, 0.58fr) minmax(0, 1.7fr) !important;
@@ -2086,7 +2058,7 @@ body[data-page="contact"] {
     padding-left: 22px !important;
 }
 
-/* обычный desktop/tablet — лучше 2 колонки, чтобы текст не давился */
+
 @media (max-width: 1320px) {
     .contact-info-flow__inner {
         grid-template-columns: 1fr !important;
@@ -2128,9 +2100,7 @@ body[data-page="contact"] {
     }
 }
 
-/* ===============================
-   CONTACT PROMPT BOARD — CLEAN EDITORIAL SLIDER
-   =============================== */
+
 
 .contact-prompt-board--editorial {
     position: relative;
@@ -2181,7 +2151,7 @@ body[data-page="contact"] {
     will-change: transform;
 }
 
-/* clean low wide card */
+
 .contact-prompt-board--editorial .prompt-tile {
     flex: 0 0 100%;
     width: 100%;
@@ -2284,7 +2254,7 @@ body[data-page="contact"] {
     line-height: 1.25;
 }
 
-/* calm color variants */
+
 .contact-prompt-board--editorial .prompt-tile--olive {
     background: var(--color-olive);
     color: rgba(255, 252, 246, 0.78);
@@ -2360,7 +2330,7 @@ body[data-page="contact"] {
     color: var(--color-muted-sage) !important;
 }
 
-/* controls */
+
 .contact-prompt-slider__controls {
     display: flex;
     align-items: center;
@@ -2485,9 +2455,7 @@ body[data-page="contact"] {
     }
 }
 
-/* ===============================
-   CONTACT PROMPT CARD — SOFTER RADIUS + DEPTH + SHINE
-   =============================== */
+
 
 .contact-prompt-board--editorial .prompt-tile {
     border-radius: 22px !important;
@@ -2501,7 +2469,7 @@ body[data-page="contact"] {
         box-shadow var(--transition-base);
 }
 
-/* лёгкий внутренний свет */
+
 .contact-prompt-board--editorial .prompt-tile::before {
     content: "";
     position: absolute;
@@ -2517,7 +2485,7 @@ body[data-page="contact"] {
     opacity: 0.9;
 }
 
-/* тонкий блеск */
+
 .contact-prompt-board--editorial .prompt-tile::after {
     content: "";
     position: absolute;
@@ -2534,7 +2502,7 @@ body[data-page="contact"] {
     transition: transform 0.9s ease;
 }
 
-/* аккуратный hover */
+
 .contact-prompt-board--editorial .prompt-tile:hover {
     transform: translateY(-4px);
     box-shadow:

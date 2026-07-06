@@ -1,14 +1,10 @@
-/* ===============================
-   KITCHORA — ALL SERVICES PAGE
-   =============================== */
+
 
 body[data-page="all-services"] {
     background: var(--color-warm-white);
 }
 
-/* ===============================
-   ALL SERVICES HERO
-   =============================== */
+
 
 .services-hero,
 .all-services-hero {
@@ -115,9 +111,7 @@ body[data-page="all-services"] {
     color: var(--color-copper);
 }
 
-/* ===============================
-   SERVICE INTRO STRIP
-   =============================== */
+
 
 .services-intro,
 .all-services-intro,
@@ -234,9 +228,7 @@ body[data-page="all-services"] {
     line-height: 1.55;
 }
 
-/* ===============================
-   SERVICE DIRECTORY GRID
-   =============================== */
+
 
 .services-directory,
 .all-services-directory,
@@ -447,9 +439,7 @@ body[data-page="all-services"] {
     height: 15px;
 }
 
-/* ===============================
-   INTERACTIVE SHOWCASE
-   =============================== */
+
 
 .services-showcase,
 .all-services-showcase,
@@ -654,9 +644,7 @@ body[data-page="all-services"] {
     line-height: 1;
 }
 
-/* ===============================
-   REQUEST DETAILS / GUIDE
-   =============================== */
+
 
 .services-guide,
 .request-guide,
@@ -733,9 +721,7 @@ body[data-page="all-services"] {
     font-size: 14px;
 }
 
-/* ===============================
-   DARK HELP / COMPARISON PANEL
-   =============================== */
+
 
 .services-help,
 .provider-help,
@@ -830,9 +816,7 @@ body[data-page="all-services"] {
     font-size: 14px;
 }
 
-/* ===============================
-   MATERIAL / CATEGORY MARQUEE
-   =============================== */
+
 
 .services-marquee,
 .category-marquee {
@@ -897,9 +881,7 @@ body[data-page="all-services"] {
     }
 }
 
-/* ===============================
-   SERVICES FAQ
-   =============================== */
+
 
 .services-faq {
     padding: 112px 0;
@@ -947,9 +929,7 @@ body[data-page="all-services"] {
     background: rgba(8, 11, 6, 0.22);
 }
 
-/* ===============================
-   RESPONSIVE
-   =============================== */
+
 
 @media (max-width: 1180px) {
 
@@ -1247,9 +1227,7 @@ body[data-page="all-services"] {
     }
 }
 
-/* ==========================================================================
-   Canonical service directory sections (current all-services.html)
-   ========================================================================== */
+
 
 .services-overview {
     background: var(--color-warm-white);
@@ -1795,9 +1773,7 @@ section.services-overview--sticky,
         padding: 26px;
     }
 }
-/* ===============================
-   SERVICES CHECKLIST PARALLAX
-   =============================== */
+
 
 .services-checklist--parallax {
     position: relative;
@@ -1935,9 +1911,7 @@ section.services-overview--sticky,
         min-height: 150px;
     }
 }
-/* ===============================
-   ABOUT CREATIVE SECTION
-   =============================== */
+
 
 .about-creative {
     position: relative;
@@ -2068,7 +2042,7 @@ section.services-overview--sticky,
     line-height: 1.58;
 }
 
-/* tablet */
+
 @media (max-width: 980px) {
     .about-creative__top {
         grid-template-columns: 1fr;
@@ -2092,7 +2066,7 @@ section.services-overview--sticky,
     }
 }
 
-/* mobile */
+
 @media (max-width: 640px) {
     .about-creative__media {
         min-height: 410px;

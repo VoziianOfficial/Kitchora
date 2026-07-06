@@ -1,14 +1,10 @@
-/* ===============================
-   KITCHORA — HOME PAGE STYLES
-   =============================== */
+
 
 body[data-page="home"] {
     background: var(--color-warm-white);
 }
 
-/* ===============================
-   1. HOME HERO
-   =============================== */
+
 
 .home-hero {
     position: relative;
@@ -202,7 +198,7 @@ body[data-page="home"] {
     line-height: 1.55;
 }
 
-/* Alternate hero slider support */
+
 
 .home-hero__slider,
 .hero-slider {
@@ -278,9 +274,7 @@ body[data-page="home"] {
     background: var(--color-cream);
 }
 
-/* ===============================
-   2. HOME CATEGORY CARDS
-   =============================== */
+
 
 .home-categories,
 .project-categories,
@@ -444,9 +438,7 @@ body[data-page="home"] {
     width: 54px;
 }
 
-/* ===============================
-   3. PLATFORM INTRO
-   =============================== */
+
 
 .home-intro,
 .platform-intro,
@@ -606,9 +598,7 @@ body[data-page="home"] {
     line-height: 1.45;
 }
 
-/* ===============================
-   4. POPULAR SERVICES
-   =============================== */
+
 
 .home-services,
 .popular-services {
@@ -769,9 +759,7 @@ body[data-page="home"] {
     height: 15px;
 }
 
-/* ===============================
-   5. PROCESS / MATCHING STEPS
-   =============================== */
+
 
 .home-process,
 .matching-process {
@@ -900,9 +888,7 @@ body[data-page="home"] {
     font-size: 14px;
 }
 
-/* ===============================
-   6. INSPIRATION / EDITORIAL BOARD
-   =============================== */
+
 
 .home-inspiration,
 .inspiration-board,
@@ -1025,9 +1011,7 @@ body[data-page="home"] {
     height: 301px;
 }
 
-/* ===============================
-   7. DARK COMPARISON / TRUST
-   =============================== */
+
 
 .home-compare,
 .trust-panel,
@@ -1129,9 +1113,7 @@ body[data-page="home"] {
     font-size: 14px;
 }
 
-/* ===============================
-   8. PARALLAX STATEMENT
-   =============================== */
+
 
 .home-parallax,
 .kitchen-parallax,
@@ -1183,9 +1165,7 @@ body[data-page="home"] {
     font-size: 18px;
 }
 
-/* ===============================
-   9. FAQ
-   =============================== */
+
 
 .home-faq {
     padding: 112px 0;
@@ -1233,9 +1213,7 @@ body[data-page="home"] {
     background: rgba(8, 11, 6, 0.22);
 }
 
-/* ===============================
-   10. MINI MARQUEE / MATERIALS
-   =============================== */
+
 
 .home-marquee,
 .material-marquee {
@@ -1300,9 +1278,7 @@ body[data-page="home"] {
     }
 }
 
-/* ===============================
-   RESPONSIVE
-   =============================== */
+
 
 @media (max-width: 1180px) {
     .home-hero__grid {
@@ -1734,9 +1710,7 @@ body[data-page="home"] {
     }
 }
 
-/* ==========================================================================
-   Canonical homepage sections (current index.html)
-   ========================================================================== */
+
 
 .home-hero {
     position: relative;
@@ -2446,9 +2420,7 @@ body[data-page="home"] {
         bottom: 14px;
     }
 }
-/* ===============================
-   FIX — HOME PARALLAX BACKGROUND
-   =============================== */
+
 
 .home-parallax {
     position: relative;
@@ -2520,9 +2492,7 @@ body[data-page="home"] {
     }
 }
 
-/* ===============================
-   PARALLAX CENTER TEXT + BRIGHT CTA
-   =============================== */
+
 
 .home-parallax {
     min-height: 620px;
@@ -2609,9 +2579,7 @@ body[data-page="home"] {
 }
 
 
-/* ===============================
-   CLEAN PHOTO PROCESS SLIDER
-   =============================== */
+
 
 .home-process--photo-slider {
     position: relative;
@@ -2988,9 +2956,7 @@ body[data-page="home"] {
         width: 100%;
     }
 }
-/* ===============================
-   PROCESS SECTION BACKGROUND SYNC
-   =============================== */
+
 
 .home-process--photo-slider {
     position: relative;
@@ -3031,15 +2997,12 @@ body[data-page="home"] {
     z-index: 2;
 }
 
-/* фото больше не на карточке */
+
 .home-process--photo-slider .home-process-slide {
     background-image: none !important;
     background-color: transparent;
 }
-/* ===============================
-   PROCESS SLIDE SOFT INNER OVERLAY
-   keeps card elegant, no photo inside card
-   =============================== */
+
 
 .home-process--photo-slider .home-process-slide {
     position: relative;
@@ -3065,7 +3028,7 @@ body[data-page="home"] {
     z-index: 2;
 }
 
-/* ONLY soften process section background photo brightness — card untouched */
+
 
 .home-process--photo-slider .home-process__section-bg {
     opacity: 0.68 !important;
@@ -3082,9 +3045,7 @@ body[data-page="home"] {
         linear-gradient(180deg, rgba(8, 11, 6, 0.34), rgba(8, 11, 6, 0.58)) !important;
 }
 
-/* ===============================
-   HOME PLANNING NOTE
-   =============================== */
+
 
 .home-planning-note {
     position: relative;
@@ -3233,9 +3194,7 @@ body[data-page="home"] {
 }
 
 
-/* ===============================
-   HOME ICON SWAP
-   =============================== */
+
 
 .home-icon-swap {
     position: relative;

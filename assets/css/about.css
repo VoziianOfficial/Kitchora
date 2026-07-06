@@ -1,14 +1,10 @@
-/* ===============================
-   KITCHORA — ABOUT PAGE STYLES
-   =============================== */
+
 
 body[data-page="about"] {
     background: var(--color-warm-white);
 }
 
-/* ===============================
-   ABOUT HERO
-   =============================== */
+
 
 .about-hero {
     position: relative;
@@ -102,9 +98,7 @@ body[data-page="about"] {
     color: var(--color-copper);
 }
 
-/* ===============================
-   INTRO / PLATFORM SECTION
-   =============================== */
+
 
 .about-intro,
 .about-platform,
@@ -263,9 +257,7 @@ body[data-page="about"] {
     line-height: 1.45;
 }
 
-/* ===============================
-   MISSION / PLATFORM MODEL
-   =============================== */
+
 
 .about-mission,
 .platform-model,
@@ -387,9 +379,7 @@ body[data-page="about"] {
     font-size: 14px;
 }
 
-/* ===============================
-   VALUES / PRINCIPLES
-   =============================== */
+
 
 .about-values,
 .about-principles,
@@ -527,9 +517,7 @@ body[data-page="about"] {
     font-size: 14px;
 }
 
-/* ===============================
-   COMPARISON / SAFETY CLARITY
-   =============================== */
+
 
 .about-compare,
 .about-safety,
@@ -624,9 +612,7 @@ body[data-page="about"] {
     font-size: 14px;
 }
 
-/* ===============================
-   PHOTO STATEMENT / PARALLAX
-   =============================== */
+
 
 .about-parallax,
 .about-statement,
@@ -677,9 +663,7 @@ body[data-page="about"] {
     font-size: 18px;
 }
 
-/* ===============================
-   STEPS / HOW PLATFORM HELPS
-   =============================== */
+
 
 .about-steps,
 .about-process,
@@ -782,9 +766,7 @@ body[data-page="about"] {
     background: rgba(8, 11, 6, 0.22);
 }
 
-/* ===============================
-   FAQ
-   =============================== */
+
 
 .about-faq {
     padding: 112px 0;
@@ -832,9 +814,7 @@ body[data-page="about"] {
     background: rgba(8, 11, 6, 0.22);
 }
 
-/* ===============================
-   RESPONSIVE
-   =============================== */
+
 
 @media (max-width: 1180px) {
 
@@ -1105,9 +1085,7 @@ body[data-page="about"] {
     }
 }
 
-/* ==========================================================================
-   Canonical about sections (current about.html)
-   ========================================================================== */
+
 
 .about-intro__media {
     min-height: 610px;
@@ -1634,9 +1612,7 @@ body[data-page="about"] {
 }
 
 
-/* ===============================
-   KITCHEN BEFORE / AFTER
-   =============================== */
+
 
 .kitchen-before-after {
     position: relative;
@@ -1845,7 +1821,7 @@ body[data-page="about"] {
     padding-bottom: 56px;
 }
 
-/* fix Before / After heading position */
+
 
 .kitchen-before-after__top {
     display: grid;
@@ -1895,9 +1871,7 @@ body[data-page="about"] {
         text-align: left;
     }
 }
-/* ===============================
-   FINAL ABOUT STATEMENT — WIDE LOW HORIZONTAL
-   =============================== */
+
 
 .about-statement.section-padding,
 .about-statement {
@@ -1996,9 +1970,7 @@ body[data-page="about"] {
     }
 }
 
-/* ===============================
-   ABOUT GALLERY TEXT TILE
-   =============================== */
+
 
 .about-gallery__item--text {
     display: flex;
@@ -2097,9 +2069,7 @@ body[data-page="about"] {
     }
 }
 
-/* ===============================
-   ABOUT STORY SWIPER
-   =============================== */
+
 
 .about-story-swiper {
     position: relative;
@@ -2371,7 +2341,7 @@ body[data-page="about"] {
     }
 }
 
-/* уменьшить нижний padding у about story swiper в 2 раза */
+
 
 .about-story-swiper.section-padding {
     padding-bottom: 56px !important;

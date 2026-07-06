@@ -1,14 +1,10 @@
-/* ===============================
-   KITCHORA — LEGAL PAGES
-   =============================== */
+
 
 body[data-page="legal"] {
     background: var(--color-warm-white);
 }
 
-/* ===============================
-   LEGAL HERO
-   =============================== */
+
 
 .legal-hero {
     position: relative;
@@ -66,9 +62,7 @@ body[data-page="legal"] {
     text-transform: uppercase;
 }
 
-/* ===============================
-   LEGAL CONTENT
-   =============================== */
+
 
 .legal-content {
     background: var(--color-warm-white);
@@ -236,9 +230,7 @@ body[data-page="legal"] {
     color: var(--color-text);
 }
 
-/* ===============================
-   LEGAL CTA
-   =============================== */
+
 
 .legal-cta {
     padding: 0 0 112px;
@@ -305,9 +297,7 @@ body[data-page="legal"] {
     gap: 12px;
 }
 
-/* ===============================
-   RESPONSIVE
-   =============================== */
+
 
 @media (max-width: 980px) {
     .legal-hero {

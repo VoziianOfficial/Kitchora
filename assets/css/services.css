@@ -1,14 +1,10 @@
-/* ===============================
-   KITCHORA — SERVICE DETAIL PAGES
-   =============================== */
+
 
 body[data-page="service-detail"] {
     background: var(--color-warm-white);
 }
 
-/* ===============================
-   1. SERVICE HERO
-   =============================== */
+
 
 .service-hero {
     position: relative;
@@ -60,9 +56,7 @@ body[data-page="service-detail"] {
     font-size: 18px;
 }
 
-/* ===============================
-   2. SERVICE DETAIL + SIDEBAR
-   =============================== */
+
 
 .service-detail {
     position: relative;
@@ -301,9 +295,7 @@ body[data-page="service-detail"] {
     line-height: 1.65;
 }
 
-/* ===============================
-   3. BENEFITS
-   =============================== */
+
 
 .service-benefits {
     position: relative;
@@ -409,9 +401,7 @@ body[data-page="service-detail"] {
     line-height: 1.58;
 }
 
-/* ===============================
-   4. REQUEST DETAILS / INCLUSIONS
-   =============================== */
+
 
 .service-inclusions {
     background: var(--color-warm-white);
@@ -510,9 +500,7 @@ body[data-page="service-detail"] {
     border-radius: 28px;
 }
 
-/* ===============================
-   5. PROJECT PROFILE / INSPIRATION
-   =============================== */
+
 
 .service-profile {
     position: relative;
@@ -650,9 +638,7 @@ body[data-page="service-detail"] {
     line-height: 1.55;
 }
 
-/* ===============================
-   6. SERVICE FAQ
-   =============================== */
+
 
 .service-faq {
     background: var(--color-warm-white);
@@ -676,17 +662,13 @@ body[data-page="service-detail"] {
     font-size: 17px;
 }
 
-/* ===============================
-   SERVICE FINAL CTA VARIATION
-   =============================== */
+
 
 .final-cta--service {
     background: var(--color-warm-white);
 }
 
-/* ===============================
-   RESPONSIVE
-   =============================== */
+
 
 @media (max-width: 1180px) {
     .service-benefits__grid {
@@ -878,9 +860,7 @@ body[data-page="service-detail"] {
 }
 
 
-/* ===============================
-   SERVICE BENEFITS — WIDE LOW CARDS
-   =============================== */
+
 
 .service-benefits .container {
     width: min(calc(100% - 40px), var(--container-wide));
