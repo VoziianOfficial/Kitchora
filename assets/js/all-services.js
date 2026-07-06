@@ -119,6 +119,120 @@
         });
     }
 
+    function initializeCategoryHelper() {
+        const helper = document.querySelector("[data-services-helper]");
+
+        if (!helper) {
+            return;
+        }
+
+        const chips = Array.from(helper.querySelectorAll("[data-helper-target]"));
+        const panel = helper.querySelector(".services-helper__panel");
+        const icon = helper.querySelector("[data-helper-icon]");
+        const kicker = helper.querySelector("[data-helper-kicker]");
+        const title = helper.querySelector("[data-helper-title]");
+        const text = helper.querySelector("[data-helper-text]");
+        const link = helper.querySelector("[data-helper-link]");
+
+        if (!chips.length || !panel || !icon || !kicker || !title || !text || !link) {
+            return;
+        }
+
+        const entries = {
+            whole: {
+                icon: "panel-top",
+                title: "Full Kitchen Remodelling",
+                text: "This category is usually the clearest starting point when the request involves layout, cabinetry, surfaces, lighting, storage, and multiple finish decisions.",
+                href: "full-kitchen-remodelling.html"
+            },
+            cabinets: {
+                icon: "archive",
+                title: "Cabinet Replacement",
+                text: "Choose this category when cabinet condition, fronts, layout, hardware, finish, drawers, pantry function, or storage are the main priorities.",
+                href: "cabinet-replacement.html"
+            },
+            surfaces: {
+                icon: "ruler",
+                title: "Countertop Installation",
+                text: "Choose this category for surface materials, approximate measurements, edge details, sink coordination, seams, and countertop-focused questions.",
+                href: "countertop-installation.html"
+            },
+            walls: {
+                icon: "grid-3x3",
+                title: "Backsplash & Tile Work",
+                text: "Choose this category when tile format, pattern, grout, wall preparation, coverage area, and nearby finish coordination are central to the request.",
+                href: "backsplash-tile-work.html"
+            },
+            light: {
+                icon: "lamp-ceiling",
+                title: "Kitchen Lighting & Fixtures",
+                text: "Choose this category for task lighting, pendants, under-cabinet light, fixture locations, sink or faucet updates, and finish coordination.",
+                href: "kitchen-lighting-fixtures.html"
+            },
+            storage: {
+                icon: "boxes",
+                title: "Kitchen Island & Storage",
+                text: "Choose this category when island function, seating, pantry organization, drawers, shelving, workflow, or storage capacity are the main goals.",
+                href: "kitchen-island-storage.html"
+            }
+        };
+
+        function activate(chip, moveFocus = false) {
+            const entry = entries[chip.getAttribute("data-helper-target")];
+
+            if (!entry) {
+                return;
+            }
+
+            chips.forEach((item) => {
+                const active = item === chip;
+                item.classList.toggle("is-active", active);
+                item.setAttribute("aria-selected", active ? "true" : "false");
+                item.setAttribute("tabindex", active ? "0" : "-1");
+            });
+
+            panel.classList.add("is-changing");
+
+            window.setTimeout(() => {
+                icon.setAttribute("data-lucide", entry.icon);
+                kicker.textContent = "Suggested category";
+                title.textContent = entry.title;
+                text.textContent = entry.text;
+                link.href = entry.href;
+                panel.classList.remove("is-changing");
+
+                if (window.KitchoraGlobal && typeof window.KitchoraGlobal.initializeIcons === "function") {
+                    window.KitchoraGlobal.initializeIcons();
+                }
+            }, 150);
+
+            if (moveFocus) {
+                chip.focus();
+            }
+        }
+
+        chips.forEach((chip, index) => {
+            chip.addEventListener("click", () => activate(chip));
+            chip.addEventListener("keydown", (event) => {
+                if (!["ArrowRight", "ArrowLeft", "Home", "End"].includes(event.key)) {
+                    return;
+                }
+
+                event.preventDefault();
+                let nextIndex = index;
+
+                if (event.key === "ArrowRight") nextIndex = (index + 1) % chips.length;
+                if (event.key === "ArrowLeft") nextIndex = (index - 1 + chips.length) % chips.length;
+                if (event.key === "Home") nextIndex = 0;
+                if (event.key === "End") nextIndex = chips.length - 1;
+
+                activate(chips[nextIndex], true);
+            });
+        });
+
+        activate(chips.find((chip) => chip.classList.contains("is-active")) || chips[0]);
+    }
+
     function initializeHeroQuickLinks() {
         const links = document.querySelectorAll(".services-hero__quick a, .all-services-hero__quick a");
 
@@ -284,6 +398,7 @@
         initializeServiceCards();
         initializeServicesMarqueeClone();
         initializeGuideRows();
+        initializeCategoryHelper();
         initializeHeroQuickLinks();
         initializeServicesFAQSchema();
         initializeServicesCollectionSchema();

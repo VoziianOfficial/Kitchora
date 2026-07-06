@@ -228,6 +228,147 @@
         });
     }
 
+    function initializeHomeNavigator() {
+        const navigator = document.querySelector("[data-home-navigator]");
+
+        if (!navigator) {
+            return;
+        }
+
+        const tabs = Array.from(navigator.querySelectorAll("[data-navigator-tab]"));
+        const panel = navigator.querySelector(".home-navigator__panel");
+        const image = navigator.querySelector("[data-navigator-image]");
+        const kicker = navigator.querySelector("[data-navigator-kicker]");
+        const title = navigator.querySelector("[data-navigator-title]");
+        const text = navigator.querySelector("[data-navigator-text]");
+        const list = navigator.querySelector("[data-navigator-list]");
+        const link = navigator.querySelector("[data-navigator-link]");
+
+        if (!tabs.length || !panel || !image || !kicker || !title || !text || !list || !link) {
+            return;
+        }
+
+        const entries = {
+            remodel: {
+                kicker: "Planning scope",
+                title: "Full remodel planning",
+                text: "Describe the overall kitchen goal, current pain points, rough room size, desired layout changes, surface preferences, and timeline expectations.",
+                items: ["Layout changes or same footprint", "Cabinet, counter, lighting, and tile priorities", "Timeline comfort and provider questions"],
+                image: "assets/images/kitchen-detail-3.jpg",
+                alt: "Full kitchen remodel request inspiration",
+                href: "full-kitchen-remodelling.html"
+            },
+            cabinet: {
+                kicker: "Storage and finish",
+                title: "Cabinet update",
+                text: "Note whether the cabinet layout should remain, which storage issues matter most, and what door, hardware, and finish direction you prefer.",
+                items: ["Existing cabinet condition and layout", "Door style, finish, and hardware direction", "Drawer, pantry, and storage priorities"],
+                image: "assets/images/service-2.jpg",
+                alt: "Sage cabinet update inspiration",
+                href: "cabinet-replacement.html"
+            },
+            countertop: {
+                kicker: "Surface preferences",
+                title: "Countertop surfaces",
+                text: "Share your approximate counter area, preferred surface character, sink details, edge ideas, and any backsplash coordination questions.",
+                items: ["Approximate dimensions or layout notes", "Surface, edge, and color preferences", "Sink, seam, and backsplash questions"],
+                image: "assets/images/service-3.jpg",
+                alt: "Stone-look countertop inspiration",
+                href: "countertop-installation.html"
+            },
+            backsplash: {
+                kicker: "Wall finish",
+                title: "Backsplash and tile",
+                text: "Describe the coverage area, tile format, pattern, grout direction, current wall condition, and how the finish should relate to nearby surfaces.",
+                items: ["Coverage area and wall condition", "Tile size, pattern, and grout preference", "Counter, cabinet, and fixture coordination"],
+                image: "assets/images/service-4.jpg",
+                alt: "Warm kitchen backsplash tile inspiration",
+                href: "backsplash-tile-work.html"
+            },
+            lighting: {
+                kicker: "Light and fixtures",
+                title: "Lighting and fixtures",
+                text: "Separate practical task-lighting needs from decorative fixture preferences and mention any under-cabinet, pendant, sink, or hardware updates.",
+                items: ["Task, ambient, and accent lighting goals", "Pendant or under-cabinet priorities", "Fixture location and finish preferences"],
+                image: "assets/images/service-5.jpg",
+                alt: "Layered kitchen lighting inspiration",
+                href: "kitchen-lighting-fixtures.html"
+            },
+            storage: {
+                kicker: "Function and flow",
+                title: "Island and storage",
+                text: "Explain how the island or storage should support cooking, seating, pantry organization, appliance placement, and everyday movement.",
+                items: ["Island size, seating, and workflow goals", "Drawer, pantry, and shelving needs", "Power, lighting, and surface questions"],
+                image: "assets/images/service-6.jpg",
+                alt: "Kitchen island and storage inspiration",
+                href: "kitchen-island-storage.html"
+            }
+        };
+
+        const panelId = "home-navigator-panel";
+        panel.id = panelId;
+        panel.setAttribute("role", "tabpanel");
+
+        function activate(tab, moveFocus = false) {
+            const key = tab.getAttribute("data-navigator-tab");
+            const entry = entries[key];
+
+            if (!entry) {
+                return;
+            }
+
+            tabs.forEach((item) => {
+                const active = item === tab;
+                item.classList.toggle("is-active", active);
+                item.setAttribute("aria-selected", active ? "true" : "false");
+                item.setAttribute("tabindex", active ? "0" : "-1");
+                item.setAttribute("aria-controls", panelId);
+            });
+
+            panel.classList.add("is-changing");
+
+            window.setTimeout(() => {
+                image.src = entry.image;
+                image.alt = entry.alt;
+                kicker.textContent = entry.kicker;
+                title.textContent = entry.title;
+                text.textContent = entry.text;
+                list.replaceChildren(...entry.items.map((itemText) => {
+                    const item = document.createElement("li");
+                    item.textContent = itemText;
+                    return item;
+                }));
+                link.href = entry.href;
+                panel.classList.remove("is-changing");
+            }, 150);
+
+            if (moveFocus) {
+                tab.focus();
+            }
+        }
+
+        tabs.forEach((tab, index) => {
+            tab.addEventListener("click", () => activate(tab));
+            tab.addEventListener("keydown", (event) => {
+                if (!["ArrowDown", "ArrowUp", "Home", "End"].includes(event.key)) {
+                    return;
+                }
+
+                event.preventDefault();
+                let nextIndex = index;
+
+                if (event.key === "ArrowDown") nextIndex = (index + 1) % tabs.length;
+                if (event.key === "ArrowUp") nextIndex = (index - 1 + tabs.length) % tabs.length;
+                if (event.key === "Home") nextIndex = 0;
+                if (event.key === "End") nextIndex = tabs.length - 1;
+
+                activate(tabs[nextIndex], true);
+            });
+        });
+
+        activate(tabs.find((tab) => tab.classList.contains("is-active")) || tabs[0]);
+    }
+
     function initializeHomeFAQSchema() {
         const faqSection = document.querySelector(".home-faq");
 
@@ -339,6 +480,7 @@
         initializeCounters();
         initializeHomeMarqueeClone();
         initializeComparisonCards();
+        initializeHomeNavigator();
         initializeHomeFAQSchema();
         initializeHomePageSchema();
         initializeScrollHint();
