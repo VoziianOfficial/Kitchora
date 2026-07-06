@@ -1795,46 +1795,11 @@ body[data-page="home"] {
     font-size: 17px;
 }
 
-.home-hero__request-card {
-    padding: 28px;
-    border: 1px solid rgba(255, 252, 246, 0.2);
-    border-radius: var(--radius-md);
-    background: rgba(16, 20, 13, 0.72);
-    color: rgba(255, 252, 246, 0.72);
-    box-shadow: var(--shadow-dark);
-    backdrop-filter: blur(14px);
-}
-
-.home-hero__request-label {
-    margin-bottom: 15px;
-    color: var(--color-muted-sage);
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-}
-
-.home-hero__request-steps {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    align-items: center;
-    margin-bottom: 18px;
-    color: var(--color-cream);
-    font-size: 12px;
-    font-weight: 700;
-}
-
-.home-hero__request-steps svg {
-    width: 14px;
-    color: var(--color-copper);
-}
-
 .home-clarity-strip {
     position: relative;
     z-index: 3;
     margin-top: -2px;
-    padding: 0 0 26px;
+    padding: 26px 0;
     background: var(--color-deep-olive);
 }
 
@@ -2399,10 +2364,6 @@ body[data-page="home"] {
 
     .home-hero__content h1 {
         font-size: clamp(42px, 13vw, 58px);
-    }
-
-    .home-hero__request-card {
-        padding: 22px;
     }
 
     .home-clarity-strip__grid,
