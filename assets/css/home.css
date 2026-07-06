@@ -2505,3 +2505,91 @@ body[data-page="home"] {
         transform: none !important;
     }
 }
+
+/* ===============================
+   PARALLAX CENTER TEXT + BRIGHT CTA
+   =============================== */
+
+.home-parallax {
+    min-height: 620px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.home-parallax__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background:
+        linear-gradient(90deg, rgba(8, 11, 6, 0.84), rgba(36, 41, 30, 0.62), rgba(8, 11, 6, 0.72)),
+        rgba(8, 11, 6, 0.48);
+}
+
+.home-parallax__content {
+    max-width: 880px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.home-parallax__content .section-kicker {
+    justify-content: center;
+}
+
+.home-parallax__content h2 {
+    max-width: 880px;
+    margin-inline: auto;
+    color: var(--color-cream);
+    text-shadow: 0 18px 42px rgba(8, 11, 6, 0.62);
+}
+
+.home-parallax__content p:not(.section-kicker) {
+    max-width: 680px;
+    margin: 20px auto 0;
+    color: rgba(247, 241, 230, 0.84);
+    text-shadow: 0 12px 32px rgba(8, 11, 6, 0.56);
+}
+
+.home-parallax__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 34px;
+}
+
+.btn-parallax-bright {
+    background: linear-gradient(135deg, var(--color-copper), var(--color-terracotta));
+    color: var(--color-warm-white);
+    border-color: rgba(255, 252, 246, 0.32);
+    box-shadow:
+        0 12px 0 rgba(8, 11, 6, 0.18),
+        0 24px 56px rgba(184, 117, 72, 0.32);
+}
+
+.btn-parallax-bright:hover {
+    background: linear-gradient(135deg, var(--color-terracotta), var(--color-wood));
+    color: var(--color-warm-white);
+    border-color: rgba(247, 241, 230, 0.52);
+    box-shadow:
+        0 8px 0 rgba(8, 11, 6, 0.18),
+        0 28px 64px rgba(184, 117, 72, 0.38);
+}
+
+@media (max-width: 760px) {
+    .home-parallax {
+        min-height: 520px;
+        padding: 78px 0;
+    }
+
+    .home-parallax__actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .home-parallax__actions .btn {
+        width: 100%;
+    }
+}
