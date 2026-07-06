@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="assets/css/all-services.css">
 </head>
 
-<body data-page="services">
+<body data-page="all-services">
     <a class="skip-link" href="#main-content">Skip to content</a>
 
     <header class="site-header" data-site-header>
@@ -182,52 +182,60 @@
             </div>
         </section>
 
-        <!-- 2. Service Category Sidebar + Featured Content -->
-        <section class="services-overview section-padding" aria-labelledby="services-overview-title">
-            <div class="container">
-                <div class="services-overview__layout">
-                    <aside class="services-overview__sidebar" data-aos="fade-right"
-                        aria-label="Kitchen service category navigation">
+    <!-- 2. Service Category Sidebar + Featured Content -->
+    <section class="services-overview services-overview--sticky section-padding" aria-labelledby="services-overview-title">
+        <div class="container">
+            <div class="services-overview__layout">
+                <aside class="services-overview__sidebar" aria-label="Kitchen service category navigation">
+                    <div class="services-overview__sidebar-panel">
                         <p class="services-overview__sidebar-title">Categories</p>
+
                         <a class="is-active" href="full-kitchen-remodelling.html">
                             <span>Full Kitchen Remodelling</span>
                             <i data-lucide="arrow-up-right" aria-hidden="true"></i>
                         </a>
+
                         <a href="cabinet-replacement.html">
                             <span>Cabinet Replacement</span>
                             <i data-lucide="arrow-up-right" aria-hidden="true"></i>
                         </a>
+
                         <a href="countertop-installation.html">
                             <span>Countertop Installation</span>
                             <i data-lucide="arrow-up-right" aria-hidden="true"></i>
                         </a>
+
                         <a href="backsplash-tile-work.html">
                             <span>Backsplash &amp; Tile Work</span>
                             <i data-lucide="arrow-up-right" aria-hidden="true"></i>
                         </a>
+
                         <a href="kitchen-lighting-fixtures.html">
                             <span>Kitchen Lighting &amp; Fixtures</span>
                             <i data-lucide="arrow-up-right" aria-hidden="true"></i>
                         </a>
+
                         <a href="kitchen-island-storage.html">
                             <span>Kitchen Island &amp; Storage</span>
                             <i data-lucide="arrow-up-right" aria-hidden="true"></i>
                         </a>
-                    </aside>
+                    </div>
+                </aside>
 
-                    <div class="services-overview__content" data-aos="fade-left">
-                        <p class="section-kicker">Category-led request flow</p>
-                        <h2 id="services-overview-title">A kitchen project becomes easier to compare when the request
-                            starts in the right category.</h2>
-                        <p>
-                            Some homeowners need a broad kitchen remodel discussion. Others need focused help comparing
-                            provider responses
-                            for cabinets, counters, backsplash tile, lighting, fixtures, islands, or storage. Kitchora
-                            helps frame the
-                            request so participating providers can better understand what the homeowner is asking about.
-                        </p>
+                <div class="services-overview__content" data-aos="fade-left">
+                    <p class="section-kicker">Category-led request flow</p>
+                    <h2 id="services-overview-title">
+                        A kitchen project becomes easier to compare when the request starts in the right category.
+                    </h2>
+                    <p>
+                        Some homeowners need a broad kitchen remodel discussion. Others need focused help comparing
+                        provider responses for cabinets, counters, backsplash tile, lighting, fixtures, islands, or storage.
+                        Kitchora helps frame the request so participating providers can better understand what the homeowner
+                        is asking about.
+                    </p>
 
-                        <div class="services-overview__feature">
+                    <div class="services-overview__stack">
+                        <article class="services-overview__feature">
                             <img src="assets/images/kitchen-detail-3.jpg"
                                 alt="Premium kitchen details with warm cream and olive interior tones">
                             <div>
@@ -243,11 +251,36 @@
                                     <i data-lucide="arrow-up-right" aria-hidden="true"></i>
                                 </a>
                             </div>
-                        </div>
+                        </article>
+
+                        <article class="services-overview__note">
+                            <i data-lucide="notebook-tabs" aria-hidden="true"></i>
+                            <div>
+                                <span>Request clarity</span>
+                                <h3>Write down the main kitchen concern before choosing a category.</h3>
+                                <p>
+                                    Layout, cabinet condition, counter surfaces, backsplash coverage, lighting, and storage
+                                    needs can each point to a different request path.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="services-overview__note services-overview__note--olive">
+                            <i data-lucide="shield-check" aria-hidden="true"></i>
+                            <div>
+                                <span>Provider review</span>
+                                <h3>Compare terms directly before deciding who to continue with.</h3>
+                                <p>
+                                    Availability, pricing, licensing, insurance, warranty language, cleanup, and written
+                                    scope should be reviewed with providers directly.
+                                </p>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
         <!-- 5. Parallax Kitchen Options Banner -->
         <section class="services-parallax" aria-labelledby="services-parallax-title" data-parallax-section>
