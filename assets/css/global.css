@@ -330,7 +330,6 @@ p {
     background: linear-gradient(135deg, var(--color-olive-dark), var(--color-deep-olive));
     color: var(--color-cream);
     border-color: rgba(184, 117, 72, 0.5);
-    box-shadow: 0 12px 0 rgba(184, 117, 72, 0.15), 0 20px 42px rgba(36, 41, 30, 0.22);
 }
 
 .btn-primary:hover {
