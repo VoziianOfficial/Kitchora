@@ -485,6 +485,9 @@
             const current = swiper.querySelector("[data-process-current]");
             const total = swiper.querySelector("[data-process-total]");
 
+            const section = swiper.closest(".home-process--photo-slider");
+            const sectionBg = section ? section.querySelector("[data-process-section-bg]") : null;
+
             if (!track || slides.length <= 1) return;
 
             let activeIndex = 0;
@@ -509,6 +512,18 @@
 
             function showSlide(index) {
                 activeIndex = (index + slides.length) % slides.length;
+
+                const activeSlide = slides[activeIndex];
+                const nextBg = activeSlide ? activeSlide.getAttribute("data-process-bg") : "";
+
+                if (sectionBg && nextBg) {
+                    sectionBg.classList.add("is-changing");
+
+                    window.setTimeout(() => {
+                        sectionBg.style.backgroundImage = `url('${nextBg}')`;
+                        sectionBg.classList.remove("is-changing");
+                    }, 140);
+                }
                 track.style.transform = `translateX(-${activeIndex * 100}%)`;
 
                 slides.forEach((slide, slideIndex) => {

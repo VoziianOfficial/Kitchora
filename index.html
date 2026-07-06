@@ -528,13 +528,16 @@
 
 <!-- 8. How Matching Works -->
 <section class="home-process home-process--photo-slider section-padding" aria-labelledby="home-process-title">
+    <div class="home-process__section-bg" data-process-section-bg
+        style="background-image: url('assets/images/process-kitchen-1.jpg');" aria-hidden="true"></div>
+
     <div class="container">
         <div class="home-process__layout">
             <div class="home-process__intro" data-aos="fade-right">
                 <p class="section-kicker section-kicker--light">How matching works</p>
 
                 <h2 id="home-process-title">
-                    A simple request flow designed around comparison, not pressure.
+                    A simple request flow designed around comparison.
                 </h2>
 
                 <p>
@@ -559,8 +562,9 @@
                 <div class="home-process-slider__viewport">
                     <div class="home-process-slider__track">
                         <article class="home-process-slide is-active"
-                            style="background-image: url('assets/images/process-kitchen-1.jpg');">
+                            data-process-bg="assets/images/process-kitchen-1.jpg">
                             <div class="home-process-slide__overlay"></div>
+
                             <div class="home-process-slide__content">
                                 <div class="home-process-slide__header">
                                     <p class="home-process-slide__eyebrow">Project intake</p>
@@ -579,9 +583,9 @@
                             </div>
                         </article>
 
-                        <article class="home-process-slide"
-                            style="background-image: url('assets/images/process-kitchen-2.jpg');">
+                        <article class="home-process-slide" data-process-bg="assets/images/process-kitchen-2.jpg">
                             <div class="home-process-slide__overlay"></div>
+
                             <div class="home-process-slide__content">
                                 <div class="home-process-slide__header">
                                     <p class="home-process-slide__eyebrow">Category fit</p>
@@ -600,9 +604,9 @@
                             </div>
                         </article>
 
-                        <article class="home-process-slide"
-                            style="background-image: url('assets/images/process-kitchen-3.jpg');">
+                        <article class="home-process-slide" data-process-bg="assets/images/process-kitchen-3.jpg">
                             <div class="home-process-slide__overlay"></div>
+
                             <div class="home-process-slide__content">
                                 <div class="home-process-slide__header">
                                     <p class="home-process-slide__eyebrow">Provider responses</p>
@@ -621,9 +625,9 @@
                             </div>
                         </article>
 
-                        <article class="home-process-slide"
-                            style="background-image: url('assets/images/process-kitchen-4.jpg');">
+                        <article class="home-process-slide" data-process-bg="assets/images/process-kitchen-4.jpg">
                             <div class="home-process-slide__overlay"></div>
+
                             <div class="home-process-slide__content">
                                 <div class="home-process-slide__header">
                                     <p class="home-process-slide__eyebrow">Homeowner choice</p>
@@ -657,6 +661,7 @@
                         <button type="button" data-process-prev aria-label="Previous step">
                             <i data-lucide="arrow-left" aria-hidden="true"></i>
                         </button>
+
                         <button type="button" data-process-next aria-label="Next step">
                             <i data-lucide="arrow-right" aria-hidden="true"></i>
                         </button>
