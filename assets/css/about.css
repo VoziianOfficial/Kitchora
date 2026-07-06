@@ -664,7 +664,6 @@ body[data-page="about"] {
 }
 
 .about-parallax__content h2,
-.about-statement__content h2,
 .about-photo-statement__content h2 {
     color: var(--color-cream);
 }
@@ -1329,26 +1328,6 @@ body[data-page="about"] {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.about-statement__play {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: grid;
-    place-items: center;
-    width: 78px;
-    height: 78px;
-    border: 1px solid rgba(255, 252, 246, 0.55);
-    border-radius: 50%;
-    background: rgba(16, 20, 13, 0.64);
-    color: var(--color-cream);
-    transform: translate(-50%, -50%);
-    backdrop-filter: blur(10px);
-}
-
-.about-statement__play svg {
-    width: 27px;
 }
 
 .about-statement__content {
