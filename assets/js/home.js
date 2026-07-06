@@ -473,6 +473,70 @@
         });
     }
 
+    function initializeHomeProcessSwiper() {
+        const swipers = document.querySelectorAll("[data-process-swiper]");
+
+        swipers.forEach((swiper) => {
+            const track = swiper.querySelector(".home-process-slider__track");
+            const slides = Array.from(swiper.querySelectorAll(".home-process-slide"));
+            const prev = swiper.querySelector("[data-process-prev]");
+            const next = swiper.querySelector("[data-process-next]");
+            const dotsContainer = swiper.querySelector("[data-process-dots]");
+            const current = swiper.querySelector("[data-process-current]");
+            const total = swiper.querySelector("[data-process-total]");
+
+            if (!track || slides.length <= 1) return;
+
+            let activeIndex = 0;
+
+            if (total) {
+                total.textContent = String(slides.length).padStart(2, "0");
+            }
+
+            const dots = [];
+
+            if (dotsContainer) {
+                dotsContainer.innerHTML = "";
+
+                slides.forEach((_, index) => {
+                    const dot = document.createElement("button");
+                    dot.type = "button";
+                    dot.setAttribute("aria-label", `Show process step ${index + 1}`);
+                    dotsContainer.appendChild(dot);
+                    dots.push(dot);
+                });
+            }
+
+            function showSlide(index) {
+                activeIndex = (index + slides.length) % slides.length;
+                track.style.transform = `translateX(-${activeIndex * 100}%)`;
+
+                slides.forEach((slide, slideIndex) => {
+                    slide.classList.toggle("is-active", slideIndex === activeIndex);
+                    slide.setAttribute("aria-hidden", slideIndex === activeIndex ? "false" : "true");
+                });
+
+                dots.forEach((dot, dotIndex) => {
+                    dot.classList.toggle("is-active", dotIndex === activeIndex);
+                    dot.setAttribute("aria-current", dotIndex === activeIndex ? "true" : "false");
+                });
+
+                if (current) {
+                    current.textContent = String(activeIndex + 1).padStart(2, "0");
+                }
+            }
+
+            prev?.addEventListener("click", () => showSlide(activeIndex - 1));
+            next?.addEventListener("click", () => showSlide(activeIndex + 1));
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener("click", () => showSlide(index));
+            });
+
+            showSlide(0);
+        });
+    }
+
     function init() {
         initializeHeroSlider();
         initializeServiceHoverPreview();
@@ -484,6 +548,7 @@
         initializeHomeFAQSchema();
         initializeHomePageSchema();
         initializeScrollHint();
+        initializeHomeProcessSwiper();
 
         if (window.KitchoraGlobal && typeof window.KitchoraGlobal.initializeIcons === "function") {
             window.KitchoraGlobal.initializeIcons();
