@@ -2151,11 +2151,11 @@ body[data-page="home"] {
 }
 
 .finish-tile {
-    min-height: 220px;
+    min-height: 124px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 26px;
+    padding: 20px;
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
     color: var(--color-muted);
@@ -2179,6 +2179,7 @@ body[data-page="home"] {
 
 .finish-tile p {
     font-size: 13px;
+    color: #000;
 }
 
 .finish-tile--wood { background: linear-gradient(145deg, #d7b18a, #9b704d); }
