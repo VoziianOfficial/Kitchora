@@ -2939,3 +2939,48 @@ body[data-page="home"] {
     background-image: none !important;
     background-color: transparent;
 }
+/* ===============================
+   PROCESS SLIDE SOFT INNER OVERLAY
+   keeps card elegant, no photo inside card
+   =============================== */
+
+.home-process--photo-slider .home-process-slide {
+    position: relative;
+    overflow: hidden;
+    background-image: none !important;
+    background-color: transparent !important;
+}
+
+.home-process--photo-slider .home-process-slide__overlay {
+    display: block !important;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background:
+        linear-gradient(135deg, rgba(247, 241, 230, 0.105), rgba(247, 241, 230, 0.035)),
+        radial-gradient(circle at 88% 12%, rgba(195, 200, 166, 0.16), transparent 34%),
+        radial-gradient(circle at 10% 96%, rgba(184, 117, 72, 0.10), transparent 30%);
+}
+
+.home-process--photo-slider .home-process-slide__content {
+    position: relative;
+    z-index: 2;
+}
+
+/* ONLY soften process section background photo brightness — card untouched */
+
+.home-process--photo-slider .home-process__section-bg {
+    opacity: 0.68 !important;
+    filter: brightness(1.14) saturate(1.08) contrast(1.02) !important;
+}
+
+.home-process--photo-slider .home-process__section-bg.is-changing {
+    opacity: 0.52 !important;
+}
+
+.home-process--photo-slider::before {
+    background:
+        linear-gradient(90deg, rgba(8, 11, 6, 0.68), rgba(8, 11, 6, 0.54), rgba(8, 11, 6, 0.5)),
+        linear-gradient(180deg, rgba(8, 11, 6, 0.34), rgba(8, 11, 6, 0.58)) !important;
+}
