@@ -448,32 +448,50 @@ p {
 .site-logo {
     display: inline-flex;
     align-items: center;
-    gap: 12px;
-    min-width: max-content;
+    flex: 0 0 auto;
+    min-width: 0;
+    line-height: 0;
 }
 
-.site-logo__mark {
-    width: 54px;
-    height: 54px;
+.site-logo__image {
+    display: block;
+    width: clamp(178px, 15vw, 250px);
+    height: auto;
+    max-height: 62px;
     object-fit: contain;
 }
 
-.site-logo__text {
-    color: var(--color-cream);
-    font-family: var(--font-heading);
-    font-size: 34px;
-    font-weight: 700;
-    line-height: 0.9;
-    letter-spacing: -0.03em;
-    transition: color var(--transition-base);
+.site-header__bar {
+    min-height: 76px;
 }
 
-.site-header.is-scrolled .site-logo__text {
-    color: var(--color-deep-olive);
+.site-header .site-logo,
+.mobile-menu .site-logo,
+.site-footer .site-logo {
+    padding: 6px 10px;
+    border-radius: 16px;
+    background: rgba(247, 241, 230, 0.94);
+    box-shadow: 0 12px 30px rgba(8, 11, 6, 0.16);
 }
 
-.site-logo--footer .site-logo__text {
-    color: var(--color-cream);
+.site-header .site-logo__image {
+    width: clamp(190px, 16vw, 260px);
+    max-height: 64px;
+}
+
+.site-header.is-scrolled .site-logo {
+    background: rgba(255, 252, 246, 0.74);
+    box-shadow: none;
+}
+
+.site-footer .site-logo__image {
+    width: clamp(210px, 22vw, 300px);
+    max-height: 76px;
+}
+
+.mobile-menu .site-logo__image {
+    width: min(230px, 72vw);
+    max-height: 68px;
 }
 
 .site-nav {
@@ -1464,13 +1482,9 @@ p {
         padding: 8px 9px 8px 12px;
     }
 
-    .site-logo__mark {
-        width: 50px;
-        height: 50px;
-    }
-
-    .site-logo__text {
-        font-size: 31px;
+    .site-header .site-logo__image {
+        width: clamp(172px, 42vw, 230px);
+        max-height: 58px;
     }
 
     .inner-hero {
@@ -1549,19 +1563,6 @@ p {
     .icon-action {
         width: 44px;
         height: 44px;
-    }
-
-    .site-logo {
-        gap: 9px;
-    }
-
-    .site-logo__mark {
-        width: 46px;
-        height: 46px;
-    }
-
-    .site-logo__text {
-        font-size: 28px;
     }
 
     .inner-hero {
@@ -1643,13 +1644,14 @@ p {
         gap: 7px;
     }
 
-    .site-logo__mark {
-        width: 42px;
-        height: 42px;
+    .site-header .site-logo {
+        padding: 5px 8px;
+        border-radius: 14px;
     }
 
-    .site-logo__text {
-        font-size: 26px;
+    .site-header .site-logo__image {
+        width: 178px;
+        max-height: 52px;
     }
 
     .mobile-toggle,
@@ -1662,6 +1664,10 @@ p {
 
     .mobile-menu__panel {
         padding: 14px;
+    }
+
+    .mobile-menu .site-logo__image {
+        width: min(220px, 70vw);
     }
 
     .mobile-menu__nav {
@@ -1698,13 +1704,9 @@ p {
 }
 
 @media (max-width: 380px) {
-    .site-logo__text {
-        font-size: 23px;
-    }
-
-    .site-logo__mark {
-        width: 39px;
-        height: 39px;
+    .site-header .site-logo__image {
+        width: 168px;
+        max-height: 49px;
     }
 
     h1 {

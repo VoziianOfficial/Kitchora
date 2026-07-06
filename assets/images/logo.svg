@@ -1,52 +1,36 @@
-<svg width="360" height="112" viewBox="0 0 360 112" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="kitchora-logo-title kitchora-logo-desc">
-    <title id="kitchora-logo-title">Kitchora</title>
-    <desc id="kitchora-logo-desc">Premium kitchen interior logo with a cabinet island mark and Kitchora wordmark.</desc>
+<svg width="520" height="130" viewBox="0 0 520 130" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="kitchora-logo-title kitchora-logo-desc">
+  <title id="kitchora-logo-title">Kitchora</title>
+  <desc id="kitchora-logo-desc">Clean premium wordmark logo for Kitchora with a custom K and elegant typography.</desc>
 
-    <defs>
-        <linearGradient id="kitchoraMarkGradient" x1="17" y1="14" x2="101" y2="98" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#F7F1E6"/>
-            <stop offset="0.46" stop-color="#C3C8A6"/>
-            <stop offset="1" stop-color="#6F7652"/>
-        </linearGradient>
+  <defs>
+    <linearGradient id="kitchoraAccent" x1="18" y1="18" x2="120" y2="116" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C46F4C"/>
+      <stop offset="0.55" stop-color="#B87548"/>
+      <stop offset="1" stop-color="#6F7652"/>
+    </linearGradient>
 
-        <linearGradient id="kitchoraCopperGradient" x1="33" y1="79" x2="82" y2="79" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#C46F4C"/>
-            <stop offset="1" stop-color="#A9794F"/>
-        </linearGradient>
+    <filter id="kitchoraShadow" x="0" y="0" width="520" height="130" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#080B06" flood-opacity="0.14"/>
+    </filter>
+  </defs>
 
-        <filter id="kitchoraSoftShadow" x="0" y="0" width="120" height="120" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#080B06" flood-opacity="0.20"/>
-        </filter>
-    </defs>
+  <g filter="url(#kitchoraShadow)">
+    <path d="M34 24V102" stroke="#24291E" stroke-width="11" stroke-linecap="round"/>
+    <path d="M34 62L78 24" stroke="#24291E" stroke-width="11" stroke-linecap="round"/>
+    <path d="M34 62L84 102" stroke="#24291E" stroke-width="11" stroke-linecap="round"/>
 
-    <g filter="url(#kitchoraSoftShadow)">
-        <rect x="12" y="10" width="88" height="88" rx="28" fill="#F7F1E6"/>
-        <rect x="16.5" y="14.5" width="79" height="79" rx="24" stroke="#3F4631" stroke-width="3"/>
+    <path d="M18 16C41 10 67 14 88 28" stroke="url(#kitchoraAccent)" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M18 109C43 116 72 112 95 95" stroke="url(#kitchoraAccent)" stroke-width="4.5" stroke-linecap="round"/>
 
-        <path d="M30 44.5C30 39.8056 33.8056 36 38.5 36H75.5C80.1944 36 84 39.8056 84 44.5V78H30V44.5Z" fill="url(#kitchoraMarkGradient)" stroke="#24291E" stroke-width="3" stroke-linejoin="round"/>
+    <text x="104" y="68" fill="#24291E" font-family="Inter, Manrope, Arial, sans-serif" font-size="50" font-weight="800" letter-spacing="5">
+      ITCHORA
+    </text>
 
-        <path d="M37 36V31.5C37 28.4624 39.4624 26 42.5 26H71.5C74.5376 26 77 28.4624 77 31.5V36" stroke="#24291E" stroke-width="3" stroke-linecap="round"/>
+    <path d="M106 82H360" stroke="#24291E" stroke-opacity="0.14" stroke-width="2"/>
+    <path d="M106 82H235" stroke="url(#kitchoraAccent)" stroke-width="5" stroke-linecap="round"/>
 
-        <path d="M44 45V77.5" stroke="#3F4631" stroke-width="2.4" stroke-linecap="round"/>
-        <path d="M57 45V77.5" stroke="#3F4631" stroke-width="2.4" stroke-linecap="round"/>
-        <path d="M70 45V77.5" stroke="#3F4631" stroke-width="2.4" stroke-linecap="round"/>
-
-        <path d="M38 80H82" stroke="url(#kitchoraCopperGradient)" stroke-width="5" stroke-linecap="round"/>
-
-        <path d="M79.834 27.112C85.246 29.732 88.516 34.831 88.711 41.315C82.273 41.151 77.182 37.82 74.606 32.424C72.182 36.545 67.977 39.114 62.874 39.196C62.945 33.836 65.673 29.464 70.088 27.155C73.025 25.618 76.569 25.582 79.834 27.112Z" fill="#A9B18A" stroke="#3F4631" stroke-width="2.3" stroke-linejoin="round"/>
-        <path d="M73.5 31.5C77.5 32.5 81.2 34.7 84 38" stroke="#F7F1E6" stroke-width="2" stroke-linecap="round"/>
-    </g>
-
-    <g>
-        <text x="122" y="61" fill="#24291E" font-family="Cormorant Garamond, Playfair Display, Georgia, serif" font-size="44" font-weight="700" letter-spacing="0.4">
-            Kitchora
-        </text>
-
-        <path d="M126 72H256" stroke="#B87548" stroke-width="3" stroke-linecap="round"/>
-        <path d="M270 72H292" stroke="#6F7652" stroke-width="3" stroke-linecap="round"/>
-
-        <text x="123" y="91" fill="#59604A" font-family="Manrope, Inter, Arial, sans-serif" font-size="10.5" font-weight="700" letter-spacing="2.4">
-            INDEPENDENT KITCHEN MATCHING PLATFORM
-        </text>
-    </g>
+    <text x="106" y="104" fill="#59604A" font-family="Inter, Manrope, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="3">
+      INDEPENDENT KITCHEN MATCHING PLATFORM
+    </text>
+  </g>
 </svg>
