@@ -181,40 +181,40 @@
             </div>
         </section>
 
-        <!-- 2. Contact Clarity Strip -->
-        <section class="contact-clarity section-padding" aria-labelledby="contact-clarity-title">
-            <div class="container">
-                <div class="visually-hidden">
-                    <h2 id="contact-clarity-title">Contact request clarity</h2>
+        <!-- Contact Info Flow -->
+        <section class="contact-info-flow" aria-labelledby="contact-info-flow-title">
+            <div class="contact-info-flow__inner">
+                <div class="contact-info-flow__intro" data-aos="fade-up">
+                    <p class="section-kicker">Contact information</p>
+                    <h2 id="contact-info-flow-title">Start with the right kitchen request details.</h2>
                 </div>
-
-                <div class="contact-clarity__grid">
-                    <article class="contact-clarity-card" data-aos="fade-up">
-                        <i data-lucide="file-pen-line" aria-hidden="true"></i>
-                        <h3>Submit details</h3>
-                        <p>Describe your kitchen request, preferred category, and important project questions.</p>
-                    </article>
-
-                    <article class="contact-clarity-card contact-clarity-card--sage" data-aos="fade-up"
-                        data-aos-delay="80">
-                        <i data-lucide="calendar-clock" aria-hidden="true"></i>
-                        <h3>Availability may vary</h3>
-                        <p>Provider response times, openings, pricing, and schedules are not controlled by Kitchora.</p>
-                    </article>
-
-                    <article class="contact-clarity-card contact-clarity-card--olive" data-aos="fade-up"
-                        data-aos-delay="160">
-                        <i data-lucide="file-x" aria-hidden="true"></i>
-                        <h3>No service agreement created</h3>
-                        <p>Submitting a request does not create a contract with Kitchora or any provider.</p>
-                    </article>
-
-                    <article class="contact-clarity-card contact-clarity-card--sand" data-aos="fade-up"
-                        data-aos-delay="240">
-                        <i data-lucide="scale" aria-hidden="true"></i>
-                        <h3>Compare before deciding</h3>
-                        <p>Review provider details directly and choose whether any option fits your needs.</p>
-                    </article>
+        
+                <div class="contact-info-flow__list" data-aos="fade-up" data-aos-delay="80">
+                    <a class="contact-info-flow__item" href="tel:+15550192744" data-config-href="contact.phoneHref">
+                        <i data-lucide="phone-call" aria-hidden="true"></i>
+                        <span>Call</span>
+                        <strong data-config="contact.phoneDisplay">+1 (555) 019-2744</strong>
+                    </a>
+        
+                    <a class="contact-info-flow__item" href="mailto:hello@kitchora.com" data-config-href="contact.emailHref">
+                        <i data-lucide="mail-check" aria-hidden="true"></i>
+                        <span>Email</span>
+                        <strong data-config="contact.email">hello@kitchora.com</strong>
+                    </a>
+        
+                    <a class="contact-info-flow__item"
+                        href="https://maps.google.com/?q=1200%20Olive%20Market%20Lane%2C%20Suite%20210%2C%20Portland%2C%20OR%2097205"
+                        target="_blank" rel="noopener" data-config-href="company.mapHref">
+                        <i data-lucide="map-pin" aria-hidden="true"></i>
+                        <span>Service area</span>
+                        <strong data-config="company.serviceArea">Selected local markets</strong>
+                    </a>
+        
+                    <a class="contact-info-flow__item contact-info-flow__item--request" href="#request-form">
+                        <i data-lucide="send-horizontal" aria-hidden="true"></i>
+                        <span>Request form</span>
+                        <strong>Submit project details</strong>
+                    </a>
                 </div>
             </div>
         </section>
@@ -457,6 +457,60 @@
                 </div>
             </div>
         </section>
+
+            <!-- 2. Contact Clarity Icon Reveal -->
+            <section class="contact-clarity contact-clarity--icons section-padding" aria-labelledby="contact-clarity-title">
+                <div class="container">
+                    <div class="contact-clarity__intro" data-aos="fade-up">
+                        <p class="section-kicker section-kicker--light">Request clarity</p>
+                        <h2 id="contact-clarity-title">Five details that make your kitchen request easier to compare.</h2>
+                    </div>
+            
+                    <div class="contact-clarity__grid">
+                        <article class="contact-clarity-card" data-aos="fade-up">
+                            <i data-lucide="file-pen-line" aria-hidden="true"></i>
+                            <div class="contact-clarity-card__body">
+                                <h3>Submit details</h3>
+                                <p>Describe your kitchen category, current concern, preferred style direction, and questions.</p>
+                            </div>
+                        </article>
+            
+                        <article class="contact-clarity-card" data-aos="fade-up" data-aos-delay="70">
+                            <i data-lucide="swatch-book" aria-hidden="true"></i>
+                            <div class="contact-clarity-card__body">
+                                <h3>Share style notes</h3>
+                                <p>Mention cabinet tone, countertop ideas, tile direction, lighting mood, or storage goals.</p>
+                            </div>
+                        </article>
+            
+                        <article class="contact-clarity-card" data-aos="fade-up" data-aos-delay="140">
+                            <i data-lucide="calendar-clock" aria-hidden="true"></i>
+                            <div class="contact-clarity-card__body">
+                                <h3>Timing may vary</h3>
+                                <p>Provider response times, availability, scheduling windows, and pricing are not controlled by
+                                    Kitchora.</p>
+                            </div>
+                        </article>
+            
+                        <article class="contact-clarity-card" data-aos="fade-up" data-aos-delay="210">
+                            <i data-lucide="file-x" aria-hidden="true"></i>
+                            <div class="contact-clarity-card__body">
+                                <h3>No agreement created</h3>
+                                <p>Submitting a request does not create a contract with Kitchora or with any provider.</p>
+                            </div>
+                        </article>
+            
+                        <article class="contact-clarity-card" data-aos="fade-up" data-aos-delay="280">
+                            <i data-lucide="scale" aria-hidden="true"></i>
+                            <div class="contact-clarity-card__body">
+                                <h3>Compare directly</h3>
+                                <p>Review scope, terms, warranty, cleanup, licensing, insurance, and pricing directly with
+                                    providers.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
 
         <!-- 5. Request Detail Prompt Board -->
         <section class="contact-prompt-board section-padding" aria-labelledby="contact-prompt-title">
