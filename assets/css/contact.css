@@ -1679,14 +1679,22 @@ body[data-page="contact"] {
     background: var(--color-deep-olive) !important;
 }
 
+.contact-clarity--icons .parallax-bg,
+.contact-clarity--icons [data-parallax-bg] {
+    z-index: 0;
+    background-image: url("../images/card-2.jpg");
+}
+
 .contact-clarity--icons::before {
     content: "";
     position: absolute;
     inset: 0;
     background:
+        linear-gradient(180deg, rgba(8, 11, 6, 0.78), rgba(8, 11, 6, 0.58)),
         radial-gradient(circle at 12% 18%, rgba(195, 200, 166, 0.1), transparent 32%),
         radial-gradient(circle at 86% 12%, rgba(184, 117, 72, 0.1), transparent 30%);
     pointer-events: none;
+    z-index: 1;
 }
 
 .contact-clarity--icons .container {
