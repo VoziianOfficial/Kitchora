@@ -2370,3 +2370,15 @@ body[data-page="about"] {
         font-size: 34px;
     }
 }
+
+/* уменьшить нижний padding у about story swiper в 2 раза */
+
+.about-story-swiper.section-padding {
+    padding-bottom: 56px !important;
+}
+
+@media (max-width: 760px) {
+    .about-story-swiper.section-padding {
+        padding-bottom: 36px !important;
+    }
+}
