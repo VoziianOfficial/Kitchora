@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchora | Compare Kitchen Remodelling Provider Options</title>
+    <meta name="description"
+        content="Kitchora helps homeowners organize kitchen remodelling project details and compare available local provider options. Independent kitchen provider-matching platform.">
+    <meta name="robots" content="index, follow">
+
+    <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+</head>
+
+<body data-page="home">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" data-site-header>
+        <div class="site-header__bar">
+            <a class="site-logo" href="index.html" aria-label="Kitchora home">
+                <img class="site-logo__mark" src="assets/images/logo.svg" alt="" width="56" height="56">
+                <span class="site-logo__text" data-config="brand.name">Kitchora</span>
+            </a>
+
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a class="site-nav__link is-active" href="index.html">Home</a>
+                <a class="site-nav__link" href="about.html">About</a>
+
+                <div class="site-nav__dropdown" data-dropdown>
+                    <a class="site-nav__link site-nav__link--dropdown" href="all-services.html" data-dropdown-link
+                        aria-expanded="false">
+                        <span>Services</span>
+                        <i data-lucide="chevron-down" aria-hidden="true"></i>
+                    </a>
+
+                    <div class="services-dropdown" data-dropdown-menu>
+                        <div class="services-dropdown__inner">
+                            <a href="full-kitchen-remodelling.html">
+                                <span>Full Kitchen Remodelling</span>
+                                <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                            </a>
+                            <a href="cabinet-replacement.html">
+                                <span>Cabinet Replacement</span>
+                                <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                            </a>
+                            <a href="countertop-installation.html">
+                                <span>Countertop Installation</span>
+                                <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                            </a>
+                            <a href="backsplash-tile-work.html">
+                                <span>Backsplash &amp; Tile Work</span>
+                                <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                            </a>
+                            <a href="kitchen-lighting-fixtures.html">
+                                <span>Kitchen Lighting &amp; Fixtures</span>
+                                <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                            </a>
+                            <a href="kitchen-island-storage.html">
+                                <span>Kitchen Island &amp; Storage</span>
+                                <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="site-nav__link" href="contact.html">Contact</a>
+            </nav>
+
+            <div class="site-header__actions">
+                <a class="icon-action" href="tel:+15550192744" data-config-href="contact.phoneHref"
+                    aria-label="Call Kitchora">
+                    <i data-lucide="phone" aria-hidden="true"></i>
+                </a>
+
+                <a class="icon-action icon-action--desktop" href="mailto:hello@kitchora.com"
+                    data-config-href="contact.emailHref" aria-label="Email Kitchora">
+                    <i data-lucide="mail" aria-hidden="true"></i>
+                </a>
+
+                <a class="btn btn-primary site-header__cta" href="contact.html#request-form">
+                    <span data-config="contact.phoneButtonText">Start Request</span>
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                </a>
+
+                <button class="mobile-toggle" type="button" data-mobile-toggle aria-label="Open menu"
+                    aria-controls="mobile-menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu" data-mobile-menu aria-hidden="true">
+        <div class="mobile-menu__panel">
+            <div class="mobile-menu__top">
+                <a class="site-logo" href="index.html" aria-label="Kitchora home">
+                    <img class="site-logo__mark" src="assets/images/logo.svg" alt="" width="54" height="54">
+                    <span class="site-logo__text" data-config="brand.name">Kitchora</span>
+                </a>
+
+                <button class="mobile-menu__close" type="button" data-mobile-close aria-label="Close menu">
+                    <i data-lucide="x" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="all-services.html">All Services</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="mobile-menu__services" aria-label="Service links">
+                <p>Kitchen categories</p>
+                <a href="full-kitchen-remodelling.html">Full Kitchen Remodelling</a>
+                <a href="cabinet-replacement.html">Cabinet Replacement</a>
+                <a href="countertop-installation.html">Countertop Installation</a>
+                <a href="backsplash-tile-work.html">Backsplash &amp; Tile Work</a>
+                <a href="kitchen-lighting-fixtures.html">Kitchen Lighting &amp; Fixtures</a>
+                <a href="kitchen-island-storage.html">Kitchen Island &amp; Storage</a>
+            </div>
+
+            <div class="mobile-menu__contact">
+                <a href="tel:+15550192744" data-config-href="contact.phoneHref">
+                    <i data-lucide="phone" aria-hidden="true"></i>
+                    <span data-config="contact.phoneDisplay">+1 (555) 019-2744</span>
+                </a>
+                <a href="mailto:hello@kitchora.com" data-config-href="contact.emailHref">
+                    <i data-lucide="mail" aria-hidden="true"></i>
+                    <span data-config="contact.email">hello@kitchora.com</span>
+                </a>
+            </div>
+
+            <div class="mobile-menu__legal">
+                <a href="privacy-policy.html">Privacy</a>
+                <a href="terms-of-service.html">Terms</a>
+                <a href="cookie-policy.html">Cookies</a>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content">
+        <!-- 1. Hero -->
+        <section class="home-hero" aria-labelledby="home-hero-title">
+            <div class="home-hero__image" aria-hidden="true">
+                <img src="assets/images/hero-home.jpg" alt="">
+            </div>
+            <div class="home-hero__overlay" aria-hidden="true"></div>
+
+            <div class="container">
+                <div class="home-hero__content" data-aos="fade-up">
+                    <p class="section-kicker section-kicker--light">Independent kitchen provider matching</p>
+                    <h1 id="home-hero-title">Compare Kitchen Remodelling Provider Options With a Clearer Project Request
+                    </h1>
+                    <p>
+                        Kitchora helps homeowners organize kitchen remodelling details and compare available local
+                        provider options.
+                        Final pricing, availability, warranties, scheduling, and service terms are provided by
+                        participating providers.
+                    </p>
+
+                    <div class="btn-row">
+                        <a class="btn btn-primary" href="contact.html#request-form">
+                            <span>Start a Kitchen Request</span>
+                            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                        </a>
+                        <a class="btn btn-secondary" href="all-services.html">
+                            <span>Explore Categories</span>
+                            <i data-lucide="layers-3" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home-hero__request-card" data-aos="fade-left" data-aos-delay="180">
+                    <p class="home-hero__request-label">Request path</p>
+                    <div class="home-hero__request-steps">
+                        <span>Project details</span>
+                        <i data-lucide="arrow-right" aria-hidden="true"></i>
+                        <span>Category fit</span>
+                        <i data-lucide="arrow-right" aria-hidden="true"></i>
+                        <span>Provider options</span>
+                    </div>
+                    <p>
+                        Use the request form to describe your kitchen goals, preferred category, style direction,
+                        and timeline before reviewing available provider responses.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Modulux-Style Category Strip -->
+        <section class="home-clarity-strip" aria-labelledby="home-clarity-title">
+            <div class="container">
+                <div class="visually-hidden">
+                    <h2 id="home-clarity-title">Kitchen request platform clarity</h2>
+                </div>
+
+                <div class="home-clarity-strip__grid">
+                    <article class="home-clarity-card" data-aos="fade-up">
+                        <i data-lucide="layout-dashboard" aria-hidden="true"></i>
+                        <h3>Independent platform</h3>
+                        <p>Kitchora organizes request details so homeowners can compare participating provider options
+                            more clearly.</p>
+                    </article>
+
+                    <article class="home-clarity-card home-clarity-card--sage" data-aos="fade-up" data-aos-delay="80">
+                        <i data-lucide="calendar-clock" aria-hidden="true"></i>
+                        <h3>Availability varies</h3>
+                        <p>Provider response times, openings, service terms, and project availability are determined by
+                            each provider.</p>
+                    </article>
+
+                    <article class="home-clarity-card home-clarity-card--olive" data-aos="fade-up" data-aos-delay="160">
+                        <i data-lucide="handshake" aria-hidden="true"></i>
+                        <h3>No obligation</h3>
+                        <p>Submitting details does not create a service agreement or require you to continue with any
+                            provider.</p>
+                    </article>
+
+                    <article class="home-clarity-card home-clarity-card--sand" data-aos="fade-up" data-aos-delay="240">
+                        <i data-lucide="mouse-pointer-click" aria-hidden="true"></i>
+                        <h3>You choose</h3>
+                        <p>Homeowners review responses and decide whether any provider option fits their project
+                            expectations.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. About Split -->
+        <section class="home-about-split section-padding" aria-labelledby="home-about-title">
+            <div class="container">
+                <div class="home-about-split__layout">
+                    <div class="home-about-split__media" data-aos="fade-right">
+                        <img class="home-about-split__image-main" src="assets/images/kitchen-detail-1.jpg"
+                            alt="Warm cream and olive kitchen interior with detailed cabinetry">
+                        <img class="home-about-split__image-small" src="assets/images/kitchen-detail-2.jpg"
+                            alt="Kitchen cabinet and countertop detail">
+                        <div class="home-about-split__badge">
+                            <span>Kitchen request</span>
+                            <strong>clarity first</strong>
+                        </div>
+                    </div>
+
+                    <div class="home-about-split__content" data-aos="fade-left">
+                        <p class="section-kicker">About Kitchora</p>
+                        <h2 id="home-about-title">A calmer way to prepare before comparing kitchen remodelling
+                            providers.</h2>
+                        <p>
+                            Kitchen projects often involve many moving parts: cabinetry, counters, lighting, storage,
+                            tile,
+                            layout goals, and timing. Kitchora helps turn those details into a clearer request before
+                            you
+                            compare available local provider responses.
+                        </p>
+
+                        <div class="home-about-split__features">
+                            <article>
+                                <i data-lucide="clipboard-list" aria-hidden="true"></i>
+                                <div>
+                                    <h3>Structured project intake</h3>
+                                    <p>Organize scope, style direction, timeline, and category fit in one request flow.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article>
+                                <i data-lucide="scale" aria-hidden="true"></i>
+                                <div>
+                                    <h3>Comparison-minded language</h3>
+                                    <p>Review provider responses with clearer questions around scope, terms, and next
+                                        steps.</p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="btn-row">
+                            <a class="btn btn-primary" href="about.html">
+                                <span>Learn About the Platform</span>
+                                <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                            </a>
+                            <a class="btn btn-outline" href="contact.html#request-form">
+                                <span>Submit Details</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Service Cards -->
+        <section class="home-services section-padding" aria-labelledby="home-services-title">
+            <div class="container">
+                <div class="section-heading section-heading--center" data-aos="fade-up">
+                    <p class="section-kicker">Kitchen categories</p>
+                    <h2 id="home-services-title">Start with the category that best matches your kitchen request.</h2>
+                    <p>
+                        Each category helps frame your project details for participating providers. Kitchora does not
+                        perform the work directly.
+                    </p>
+                </div>
+
+                <div class="home-services__grid">
+                    <a class="home-service-card" href="full-kitchen-remodelling.html" data-aos="zoom-in">
+                        <img src="assets/images/service-1.jpg"
+                            alt="Open kitchen remodelling inspiration with warm cabinetry">
+                        <span class="home-service-card__overlay"></span>
+                        <i data-lucide="panel-top" aria-hidden="true"></i>
+                        <div>
+                            <p>Category 01</p>
+                            <h3>Full Kitchen Remodelling</h3>
+                            <span>Layout, surfaces, storage, lighting, and broader update planning.</span>
+                        </div>
+                    </a>
+
+                    <a class="home-service-card" href="cabinet-replacement.html" data-aos="zoom-in" data-aos-delay="80">
+                        <img src="assets/images/service-2.jpg" alt="Sage kitchen cabinets and clean modern handles">
+                        <span class="home-service-card__overlay"></span>
+                        <i data-lucide="archive" aria-hidden="true"></i>
+                        <div>
+                            <p>Category 02</p>
+                            <h3>Cabinet Replacement</h3>
+                            <span>Cabinet style, door fronts, storage priorities, and finish preferences.</span>
+                        </div>
+                    </a>
+
+                    <a class="home-service-card" href="countertop-installation.html" data-aos="zoom-in"
+                        data-aos-delay="160">
+                        <img src="assets/images/service-3.jpg"
+                            alt="Kitchen countertop surface with warm light and stone texture">
+                        <span class="home-service-card__overlay"></span>
+                        <i data-lucide="ruler" aria-hidden="true"></i>
+                        <div>
+                            <p>Category 03</p>
+                            <h3>Countertop Installation</h3>
+                            <span>Surface type, edge style, kitchen size, and discussion points.</span>
+                        </div>
+                    </a>
+
+                    <a class="home-service-card" href="backsplash-tile-work.html" data-aos="zoom-in">
+                        <img src="assets/images/service-4.jpg" alt="Kitchen backsplash tile detail in a cream interior">
+                        <span class="home-service-card__overlay"></span>
+                        <i data-lucide="grid-3x3" aria-hidden="true"></i>
+                        <div>
+                            <p>Category 04</p>
+                            <h3>Backsplash &amp; Tile Work</h3>
+                            <span>Tile style, coverage area, surface prep, and finish expectations.</span>
+                        </div>
+                    </a>
+
+                    <a class="home-service-card" href="kitchen-lighting-fixtures.html" data-aos="zoom-in"
+                        data-aos-delay="80">
+                        <img src="assets/images/service-5.jpg" alt="Warm kitchen lighting over a modern island">
+                        <span class="home-service-card__overlay"></span>
+                        <i data-lucide="lamp-ceiling" aria-hidden="true"></i>
+                        <div>
+                            <p>Category 05</p>
+                            <h3>Kitchen Lighting &amp; Fixtures</h3>
+                            <span>Task lighting, fixture updates, under-cabinet light, and ambience goals.</span>
+                        </div>
+                    </a>
+
+                    <a class="home-service-card" href="kitchen-island-storage.html" data-aos="zoom-in"
+                        data-aos-delay="160">
+                        <img src="assets/images/service-6.jpg" alt="Kitchen island with storage and soft olive details">
+                        <span class="home-service-card__overlay"></span>
+                        <i data-lucide="box" aria-hidden="true"></i>
+                        <div>
+                            <p>Category 06</p>
+                            <h3>Kitchen Island &amp; Storage</h3>
+                            <span>Island function, seating, drawers, pantry ideas, and layout questions.</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Parallax Kitchen Statement -->
+        <section class="home-parallax" aria-labelledby="home-parallax-title" data-parallax-section>
+            <div class="parallax-bg" data-parallax-bg
+                style="background-image: url('assets/images/parallax-kitchen.jpg');" aria-hidden="true"></div>
+            <div class="home-parallax__overlay" aria-hidden="true"></div>
+
+            <div class="container">
+                <div class="home-parallax__content" data-aos="fade-up">
+                    <p class="section-kicker section-kicker--light">Before provider conversations</p>
+                    <h2 id="home-parallax-title">A refined kitchen request can make comparison easier before you decide
+                        what comes next.</h2>
+                    <p>
+                        Use Kitchora to frame project priorities, preferred finishes, and practical questions before
+                        reviewing available provider responses.
+                    </p>
+                    <a class="btn btn-secondary" href="contact.html#request-form">
+                        <span>Prepare My Request</span>
+                        <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Interactive Kitchen Request Navigator -->
+        <section class="home-navigator section-padding" aria-labelledby="home-navigator-title">
+            <div class="container">
+                <div class="section-heading" data-aos="fade-up">
+                    <p class="section-kicker">Request navigator</p>
+                    <h2 id="home-navigator-title">Choose the situation closest to your kitchen plan.</h2>
+                    <p>
+                        The navigator helps homeowners think through what to mention when submitting details. It does
+                        not replace provider advice, estimates, or service terms.
+                    </p>
+                </div>
+
+                <div class="home-navigator__layout" data-home-navigator>
+                    <div class="home-navigator__tabs" role="tablist" aria-label="Kitchen request situations">
+                        <button class="home-navigator__tab is-active" type="button" role="tab" aria-selected="true"
+                            data-navigator-tab="remodel">
+                            <span>Full remodel planning</span>
+                            <i data-lucide="move-diagonal" aria-hidden="true"></i>
+                        </button>
+                        <button class="home-navigator__tab" type="button" role="tab" aria-selected="false"
+                            data-navigator-tab="cabinet">
+                            <span>Cabinet update</span>
+                            <i data-lucide="archive" aria-hidden="true"></i>
+                        </button>
+                        <button class="home-navigator__tab" type="button" role="tab" aria-selected="false"
+                            data-navigator-tab="countertop">
+                            <span>Countertop surfaces</span>
+                            <i data-lucide="panel-top" aria-hidden="true"></i>
+                        </button>
+                        <button class="home-navigator__tab" type="button" role="tab" aria-selected="false"
+                            data-navigator-tab="backsplash">
+                            <span>Backsplash and tile</span>
+                            <i data-lucide="grid-3x3" aria-hidden="true"></i>
+                        </button>
+                        <button class="home-navigator__tab" type="button" role="tab" aria-selected="false"
+                            data-navigator-tab="lighting">
+                            <span>Lighting and fixtures</span>
+                            <i data-lucide="lamp" aria-hidden="true"></i>
+                        </button>
+                        <button class="home-navigator__tab" type="button" role="tab" aria-selected="false"
+                            data-navigator-tab="storage">
+                            <span>Island and storage</span>
+                            <i data-lucide="boxes" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <article class="home-navigator__panel" data-aos="fade-left">
+                        <img src="assets/images/kitchen-detail-3.jpg" alt="Kitchen request inspiration panel"
+                            data-navigator-image>
+                        <div class="home-navigator__panel-content">
+                            <p data-navigator-kicker>Planning scope</p>
+                            <h3 data-navigator-title>Full remodel planning</h3>
+                            <p data-navigator-text>
+                                Describe the overall kitchen goal, current pain points, rough room size, desired layout
+                                changes,
+                                surface preferences, and timeline expectations.
+                            </p>
+                            <ul data-navigator-list>
+                                <li>Layout changes or same footprint</li>
+                                <li>Cabinet, counter, lighting, and tile priorities</li>
+                                <li>Timeline comfort and provider questions</li>
+                            </ul>
+                            <a class="btn btn-outline" href="full-kitchen-remodelling.html" data-navigator-link>
+                                <span>View Category</span>
+                                <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Material / Finish Board -->
+        <section class="home-finish-board section-padding" aria-labelledby="home-finish-title">
+            <div class="container">
+                <div class="home-finish-board__intro" data-aos="fade-up">
+                    <p class="section-kicker">Preference prompts</p>
+                    <h2 id="home-finish-title">Use finish ideas as request notes, not products sold by Kitchora.</h2>
+                    <p>
+                        These kitchen style prompts can help you describe preferences when submitting a request.
+                        Kitchora is not an eCommerce store, manufacturer, installer, or design studio.
+                    </p>
+                </div>
+
+                <div class="home-finish-board__grid">
+                    <article class="finish-tile finish-tile--wood" data-aos="fade-up">
+                        <span>Warm oak</span>
+                        <p>Good to mention if you prefer natural wood tones or soft Scandinavian warmth.</p>
+                    </article>
+
+                    <article class="finish-tile finish-tile--sage" data-aos="fade-up" data-aos-delay="60">
+                        <span>Soft sage cabinets</span>
+                        <p>Useful for cabinet color discussions and calm interior direction.</p>
+                    </article>
+
+                    <article class="finish-tile finish-tile--stone" data-aos="fade-up" data-aos-delay="120">
+                        <span>Stone-look counters</span>
+                        <p>Helps frame countertop surface questions before provider conversations.</p>
+                    </article>
+
+                    <article class="finish-tile finish-tile--cream" data-aos="fade-up" data-aos-delay="180">
+                        <span>Cream flat-panel doors</span>
+                        <p>Clarifies whether the request leans clean, minimal, warm, or traditional.</p>
+                    </article>
+
+                    <article class="finish-tile finish-tile--copper" data-aos="fade-up">
+                        <span>Copper hardware</span>
+                        <p>A small detail that can shape fixture, handle, and accent conversations.</p>
+                    </article>
+
+                    <article class="finish-tile finish-tile--olive" data-aos="fade-up" data-aos-delay="60">
+                        <span>Matte olive storage</span>
+                        <p>Useful for describing richer green cabinetry or pantry-focused concepts.</p>
+                    </article>
+
+                    <article class="finish-tile finish-tile--lightwood" data-aos="fade-up" data-aos-delay="120">
+                        <span>Scandinavian light wood</span>
+                        <p>Frames a softer, brighter kitchen atmosphere with simple lines.</p>
+                    </article>
+
+                    <article class="finish-tile finish-tile--lighting" data-aos="fade-up" data-aos-delay="180">
+                        <span>Under-cabinet lighting</span>
+                        <p>Helps separate task-lighting needs from decorative fixture preferences.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. How Matching Works -->
+        <section class="home-process section-padding" aria-labelledby="home-process-title">
+            <div class="container">
+                <div class="home-process__heading" data-aos="fade-up">
+                    <p class="section-kicker section-kicker--light">How matching works</p>
+                    <h2 id="home-process-title">A simple request flow designed around comparison, not pressure.</h2>
+                </div>
+
+                <div class="home-process__list">
+                    <article class="home-process__item" data-aos="fade-right">
+                        <div class="home-process__marker">
+                            <i data-lucide="file-pen-line" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h3>Share project details</h3>
+                            <p>Tell us about your kitchen goals, current issues, preferred category, and style
+                                direction.</p>
+                        </div>
+                    </article>
+
+                    <article class="home-process__item" data-aos="fade-right" data-aos-delay="80">
+                        <div class="home-process__marker">
+                            <i data-lucide="list-checks" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h3>Choose relevant category</h3>
+                            <p>Select the category that best fits your project so the request is easier to understand.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="home-process__item" data-aos="fade-right" data-aos-delay="160">
+                        <div class="home-process__marker">
+                            <i data-lucide="messages-square" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h3>Review provider responses</h3>
+                            <p>Participating providers may respond with availability, next-step questions, or service
+                                information.</p>
+                        </div>
+                    </article>
+
+                    <article class="home-process__item" data-aos="fade-right" data-aos-delay="240">
+                        <div class="home-process__marker">
+                            <i data-lucide="check-check" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h3>Continue only if it fits</h3>
+                            <p>You decide whether any provider option, schedule, scope, or term feels right for your
+                                home.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. FAQ -->
+        <section class="home-faq section-padding" aria-labelledby="home-faq-title">
+            <div class="container">
+                <div class="home-faq__layout">
+                    <div class="home-faq__media" data-aos="fade-right">
+                        <img src="assets/images/scandinavian-kitchen.jpg"
+                            alt="Cream and wood Scandinavian kitchen inspiration">
+                        <div class="home-faq__note">
+                            <i data-lucide="badge-info" aria-hidden="true"></i>
+                            <p>Provider pricing, scheduling, warranties, licensing, insurance, and final terms are
+                                handled by participating providers.</p>
+                        </div>
+                    </div>
+
+                    <div class="home-faq__content" data-aos="fade-left">
+                        <p class="section-kicker">Questions before you start</p>
+                        <h2 id="home-faq-title">Provider comparison should feel clear before it feels urgent.</h2>
+
+                        <div class="accordion" data-accordion>
+                            <article class="accordion__item is-open">
+                                <button class="accordion__button" type="button" aria-expanded="true">
+                                    <span>Does Kitchora remodel kitchens directly?</span>
+                                    <i data-lucide="plus" aria-hidden="true"></i>
+                                </button>
+                                <div class="accordion__content">
+                                    <p>No. Kitchora is an independent provider-matching platform. It does not remodel,
+                                        install, design, inspect, repair, manufacture, sell, or guarantee kitchen work
+                                        directly.</p>
+                                </div>
+                            </article>
+
+                            <article class="accordion__item">
+                                <button class="accordion__button" type="button" aria-expanded="false">
+                                    <span>What happens after I submit a request?</span>
+                                    <i data-lucide="plus" aria-hidden="true"></i>
+                                </button>
+                                <div class="accordion__content">
+                                    <p>Your request details may be used to help identify participating provider options.
+                                        Providers may respond with availability, questions, or next-step information.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="accordion__item">
+                                <button class="accordion__button" type="button" aria-expanded="false">
+                                    <span>Can I compare more than one provider?</span>
+                                    <i data-lucide="plus" aria-hidden="true"></i>
+                                </button>
+                                <div class="accordion__content">
+                                    <p>Yes, when multiple provider options are available, you can review responses and
+                                        decide whether any option fits your needs.</p>
+                                </div>
+                            </article>
+
+                            <article class="accordion__item">
+                                <button class="accordion__button" type="button" aria-expanded="false">
+                                    <span>Are provider quotes guaranteed?</span>
+                                    <i data-lucide="plus" aria-hidden="true"></i>
+                                </button>
+                                <div class="accordion__content">
+                                    <p>No. Any pricing, quote, schedule, warranty, licensing, insurance, or service term
+                                        is provided by the participating provider and should be reviewed directly with
+                                        them.</p>
+                                </div>
+                            </article>
+
+                            <article class="accordion__item">
+                                <button class="accordion__button" type="button" aria-expanded="false">
+                                    <span>Do I have to continue after submitting?</span>
+                                    <i data-lucide="plus" aria-hidden="true"></i>
+                                </button>
+                                <div class="accordion__content">
+                                    <p>No. Submitting a request does not create a service agreement. You choose whether
+                                        to continue after reviewing available provider responses.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Does Kitchora remodel kitchens directly?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. Kitchora is an independent provider-matching platform. It does not remodel, install, design, inspect, repair, manufacture, sell, or guarantee kitchen work directly."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What happens after I submit a request?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Your request details may be used to help identify participating provider options. Providers may respond with availability, questions, or next-step information."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Can I compare more than one provider?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, when multiple provider options are available, you can review responses and decide whether any option fits your needs."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Are provider quotes guaranteed?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. Any pricing, quote, schedule, warranty, licensing, insurance, or service term is provided by the participating provider and should be reviewed directly with them."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Do I have to continue after submitting?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. Submitting a request does not create a service agreement. You choose whether to continue after reviewing available provider responses."
+                        }
+                    }
+                ]
+            }
+            </script>
+        </section>
+
+        <!-- 10. Final Pre-Footer CTA -->
+        <section class="final-cta final-cta--home" aria-labelledby="home-final-cta-title">
+            <div class="container">
+                <div class="final-cta__card" data-aos="zoom-in">
+                    <img src="assets/images/cta-kitchen.jpg" alt="" aria-hidden="true">
+                    <div class="final-cta__overlay" aria-hidden="true"></div>
+
+                    <div class="final-cta__content">
+                        <p class="section-kicker section-kicker--light">Start with clarity</p>
+                        <h2 id="home-final-cta-title">Prepare your kitchen request before comparing provider options.
+                        </h2>
+                        <p>
+                            Share your project category, style direction, timeline, and practical questions so available
+                            provider responses are easier to review.
+                        </p>
+                    </div>
+
+                    <div class="final-cta__actions">
+                        <a class="btn btn-primary" href="contact.html#request-form">
+                            <span>Start a Kitchen Request</span>
+                            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                        </a>
+                        <a class="btn btn-secondary" href="all-services.html">
+                            <span>View Categories</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer__top">
+                <div class="site-footer__brand">
+                    <a class="site-logo site-logo--footer" href="index.html" aria-label="Kitchora home">
+                        <img class="site-logo__mark" src="assets/images/logo.svg" alt="" width="58" height="58">
+                        <span class="site-logo__text" data-config="brand.name">Kitchora</span>
+                    </a>
+                    <p data-config="footer.description">
+                        Independent kitchen remodelling provider-matching platform helping homeowners organize project
+                        details before comparing available local provider options.
+                    </p>
+                    <p class="site-footer__legal-name">
+                        <span data-config="company.name">Kitchora Matching Group LLC</span>
+                    </p>
+                </div>
+
+                <div class="site-footer__column">
+                    <h2>Navigation</h2>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="all-services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div class="site-footer__column">
+                    <h2>Categories</h2>
+                    <a href="full-kitchen-remodelling.html">Full Kitchen Remodelling</a>
+                    <a href="cabinet-replacement.html">Cabinet Replacement</a>
+                    <a href="countertop-installation.html">Countertop Installation</a>
+                    <a href="backsplash-tile-work.html">Backsplash &amp; Tile Work</a>
+                    <a href="kitchen-lighting-fixtures.html">Kitchen Lighting &amp; Fixtures</a>
+                    <a href="kitchen-island-storage.html">Kitchen Island &amp; Storage</a>
+                </div>
+
+                <div class="site-footer__column site-footer__contact">
+                    <h2>Contact</h2>
+                    <a href="tel:+15550192744" data-config-href="contact.phoneHref">
+                        <i data-lucide="phone" aria-hidden="true"></i>
+                        <span data-config="contact.phoneDisplay">+1 (555) 019-2744</span>
+                    </a>
+                    <a href="mailto:hello@kitchora.com" data-config-href="contact.emailHref">
+                        <i data-lucide="mail" aria-hidden="true"></i>
+                        <span data-config="contact.email">hello@kitchora.com</span>
+                    </a>
+                    <a href="https://maps.google.com/?q=1200%20Olive%20Market%20Lane%2C%20Suite%20210%2C%20Portland%2C%20OR%2097205"
+                        target="_blank" rel="noopener" data-config-href="company.mapHref">
+                        <i data-lucide="map-pin" aria-hidden="true"></i>
+                        <span data-config="company.address">1200 Olive Market Lane, Suite 210, Portland, OR 97205</span>
+                    </a>
+                    <p>
+                        Company ID:
+                        <span data-config="company.companyId">KMG-472019</span>
+                    </p>
+                    <p>
+                        Service area:
+                        <span data-config="company.serviceArea">Selected local markets</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="site-footer__disclaimer">
+                <p data-config="legal.shortDisclaimer">
+                    Kitchora is an independent provider-matching platform. Final pricing, availability, warranties,
+                    licensing, insurance, scheduling, and service terms are provided by participating providers.
+                </p>
+            </div>
+
+            <div class="site-footer__bottom">
+                <p data-config="footer.copyright">© 2026 Kitchora. All rights reserved.</p>
+                <div class="site-footer__legal-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="cookie-policy.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <aside class="cookie-banner" data-cookie-banner aria-label="Cookie consent">
+        <div class="cookie-banner__content">
+            <p>
+                We use cookies to improve site functionality and understand request flow. Read our
+                <a href="privacy-policy.html">Privacy Policy</a>,
+                <a href="terms-of-service.html">Terms</a>, and
+                <a href="cookie-policy.html">Cookie Policy</a>.
+            </p>
+        </div>
+        <div class="cookie-banner__actions">
+            <button class="btn btn-outline btn-small" type="button" data-cookie-decline>Decline</button>
+            <button class="btn btn-primary btn-small" type="button" data-cookie-accept>Accept</button>
+        </div>
+    </aside>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/global.js"></script>
+    <script src="assets/js/home.js"></script>
+</body>
+
+</html>
