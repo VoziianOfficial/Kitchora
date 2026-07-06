@@ -254,7 +254,7 @@
                 title: "Full remodel planning",
                 text: "Describe the overall kitchen goal, current pain points, rough room size, desired layout changes, surface preferences, and timeline expectations.",
                 items: ["Layout changes or same footprint", "Cabinet, counter, lighting, and tile priorities", "Timeline comfort and provider questions"],
-                image: "assets/images/kitchen-detail-3.jpg",
+                image: "assets/images/kitchen-detail-2.jpg",
                 alt: "Full kitchen remodel request inspiration",
                 href: "full-kitchen-remodelling.html"
             },
