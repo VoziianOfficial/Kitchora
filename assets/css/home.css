@@ -2432,3 +2432,76 @@ body[data-page="home"] {
         bottom: 14px;
     }
 }
+/* ===============================
+   FIX — HOME PARALLAX BACKGROUND
+   =============================== */
+
+.home-parallax {
+    position: relative;
+    isolation: isolate;
+    min-height: 560px;
+    display: grid;
+    align-items: center;
+    overflow: hidden;
+    background: var(--color-deep-olive);
+    color: var(--color-cream);
+}
+
+.home-parallax .parallax-bg,
+.home-parallax [data-parallax-bg] {
+    position: absolute;
+    inset: -14% 0;
+    z-index: 0;
+    display: block;
+    width: 100%;
+    height: 128%;
+    background-image: url("../images/parallax-kitchen.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+}
+
+.home-parallax__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background:
+        linear-gradient(90deg, rgba(8, 11, 6, 0.84), rgba(36, 41, 30, 0.62), rgba(8, 11, 6, 0.72)),
+        rgba(8, 11, 6, 0.48);
+}
+
+.home-parallax .container {
+    position: relative;
+    z-index: 2;
+}
+
+.home-parallax__content {
+    max-width: 850px;
+}
+
+.home-parallax__content h2 {
+    color: var(--color-cream);
+}
+
+.home-parallax__content p:not(.section-kicker) {
+    max-width: 680px;
+    margin-top: 18px;
+    color: rgba(247, 241, 230, 0.78);
+    font-size: 18px;
+}
+
+@media (max-width: 760px) {
+    .home-parallax {
+        min-height: 480px;
+    }
+
+    .home-parallax .parallax-bg,
+    .home-parallax [data-parallax-bg] {
+        inset: 0;
+        height: 100%;
+        transform: none !important;
+    }
+}
