@@ -2144,7 +2144,6 @@ body[data-page="about"] {
     overflow: hidden;
     border-radius: 34px;
     background: var(--color-warm-white);
-    box-shadow: 0 22px 62px rgba(36, 41, 30, 0.11);
 }
 
 .about-story-slide--text {
