@@ -2119,3 +2119,421 @@ body[data-page="contact"] {
         font-size: 22px !important;
     }
 }
+
+/* ===============================
+   CONTACT PROMPT BOARD — CLEAN EDITORIAL SLIDER
+   =============================== */
+
+.contact-prompt-board--editorial {
+    position: relative;
+    overflow: hidden;
+    background: var(--color-soft-cream) !important;
+}
+
+.contact-prompt-board--editorial .contact-prompt-board__inner {
+    width: min(calc(100% - 40px), var(--container-wide));
+    margin-inline: auto;
+}
+
+.contact-prompt-board--editorial .contact-prompt-board__top {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(360px, 0.52fr);
+    gap: clamp(28px, 5vw, 72px);
+    align-items: end;
+    margin-bottom: 34px;
+}
+
+.contact-prompt-board--editorial .contact-prompt-board__top h2 {
+    max-width: 760px;
+    color: var(--color-deep-olive);
+    font-size: clamp(38px, 4vw, 64px);
+    line-height: 0.96;
+}
+
+.contact-prompt-board--editorial .contact-prompt-board__top>p {
+    max-width: 520px;
+    color: var(--color-muted);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.contact-prompt-slider {
+    position: relative;
+}
+
+.contact-prompt-slider__viewport {
+    width: 100%;
+    overflow: hidden;
+}
+
+.contact-prompt-slider__track {
+    display: flex;
+    width: 100%;
+    transition: transform 620ms cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+}
+
+/* clean low wide card */
+.contact-prompt-board--editorial .prompt-tile {
+    flex: 0 0 100%;
+    width: 100%;
+    min-height: 270px !important;
+    display: grid !important;
+    grid-template-columns: 120px minmax(0, 1fr) minmax(260px, 0.34fr);
+    gap: clamp(24px, 4vw, 52px);
+    align-items: stretch;
+    justify-content: initial !important;
+    padding: 34px 38px !important;
+    border: 1px solid rgba(63, 70, 49, 0.16);
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    transform: none !important;
+}
+
+.contact-prompt-board--editorial .prompt-tile:hover {
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.prompt-tile__side {
+    display: grid;
+    align-content: space-between;
+    padding-right: 28px;
+    border-right: 1px solid currentColor;
+    opacity: 0.72;
+}
+
+.prompt-tile__side span {
+    font-family: var(--font-heading);
+    font-size: 48px;
+    line-height: 0.9;
+    letter-spacing: -0.04em;
+}
+
+.prompt-tile__side svg {
+    width: 44px !important;
+    height: 44px !important;
+    margin: 0 !important;
+    color: currentColor;
+    stroke-width: 1.2;
+}
+
+.prompt-tile__main {
+    align-self: center;
+    min-width: 0;
+}
+
+.prompt-tile__label {
+    margin: 0 0 10px !important;
+    color: var(--color-copper) !important;
+    font-size: 10px !important;
+    font-weight: 900;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.contact-prompt-board--editorial .prompt-tile h3 {
+    max-width: 760px;
+    margin: 0 0 12px !important;
+    font-size: clamp(28px, 3vw, 46px) !important;
+    line-height: 1.02;
+    letter-spacing: -0.025em;
+}
+
+.contact-prompt-board--editorial .prompt-tile p {
+    max-width: 840px;
+    margin: 0;
+    font-size: 15px !important;
+    line-height: 1.62;
+}
+
+.prompt-tile__aside {
+    align-self: stretch;
+    display: grid;
+    align-content: center;
+    gap: 0;
+    padding-left: 28px;
+    border-left: 1px solid currentColor;
+    opacity: 0.78;
+}
+
+.prompt-tile__aside p {
+    margin: 0 0 10px !important;
+    color: inherit !important;
+    font-size: 10px !important;
+    font-weight: 900;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+.prompt-tile__aside span {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid currentColor;
+    color: inherit;
+    font-size: 13px;
+    line-height: 1.25;
+}
+
+/* calm color variants */
+.contact-prompt-board--editorial .prompt-tile--olive {
+    background: var(--color-olive);
+    color: rgba(255, 252, 246, 0.78);
+}
+
+.contact-prompt-board--editorial .prompt-tile--olive h3,
+.contact-prompt-board--editorial .prompt-tile--olive .prompt-tile__side {
+    color: var(--color-cream);
+}
+
+.contact-prompt-board--editorial .prompt-tile--cream {
+    background: var(--color-cream);
+    color: var(--color-muted);
+}
+
+.contact-prompt-board--editorial .prompt-tile--cream h3,
+.contact-prompt-board--editorial .prompt-tile--cream .prompt-tile__side {
+    color: var(--color-deep-olive);
+}
+
+.contact-prompt-board--editorial .prompt-tile--sage {
+    background: var(--color-muted-sage);
+    color: rgba(36, 41, 30, 0.72);
+}
+
+.contact-prompt-board--editorial .prompt-tile--sage h3,
+.contact-prompt-board--editorial .prompt-tile--sage .prompt-tile__side {
+    color: var(--color-deep-olive);
+}
+
+.contact-prompt-board--editorial .prompt-tile--wood {
+    background: #C6A17B;
+    color: rgba(36, 41, 30, 0.72);
+}
+
+.contact-prompt-board--editorial .prompt-tile--wood h3,
+.contact-prompt-board--editorial .prompt-tile--wood .prompt-tile__side {
+    color: var(--color-deep-olive);
+}
+
+.contact-prompt-board--editorial .prompt-tile--sand {
+    background: var(--color-sand);
+    color: rgba(36, 41, 30, 0.72);
+}
+
+.contact-prompt-board--editorial .prompt-tile--sand h3,
+.contact-prompt-board--editorial .prompt-tile--sand .prompt-tile__side {
+    color: var(--color-deep-olive);
+}
+
+.contact-prompt-board--editorial .prompt-tile--copper {
+    background: #BE815B;
+    color: rgba(36, 41, 30, 0.76);
+}
+
+.contact-prompt-board--editorial .prompt-tile--copper h3,
+.contact-prompt-board--editorial .prompt-tile--copper .prompt-tile__side {
+    color: var(--color-deep-olive);
+}
+
+.contact-prompt-board--editorial .prompt-tile--deep {
+    background: var(--color-deep-olive);
+    color: rgba(255, 252, 246, 0.7);
+}
+
+.contact-prompt-board--editorial .prompt-tile--deep h3,
+.contact-prompt-board--editorial .prompt-tile--deep .prompt-tile__side {
+    color: var(--color-cream);
+}
+
+.contact-prompt-board--editorial .prompt-tile--deep .prompt-tile__label,
+.contact-prompt-board--editorial .prompt-tile--olive .prompt-tile__label {
+    color: var(--color-muted-sage) !important;
+}
+
+/* controls */
+.contact-prompt-slider__controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.contact-prompt-slider__arrow {
+    width: 48px;
+    height: 48px;
+    display: inline-grid;
+    place-items: center;
+    border: 1px solid rgba(63, 70, 49, 0.18);
+    border-radius: 0;
+    background: transparent;
+    color: var(--color-deep-olive);
+    cursor: pointer;
+    transition:
+        background var(--transition-base),
+        color var(--transition-base),
+        border-color var(--transition-base);
+}
+
+.contact-prompt-slider__arrow svg {
+    width: 19px;
+    height: 19px;
+}
+
+.contact-prompt-slider__arrow:hover {
+    border-color: var(--color-olive-dark);
+    background: var(--color-olive-dark);
+    color: var(--color-cream);
+}
+
+.contact-prompt-slider__count {
+    min-width: 78px;
+    display: inline-flex;
+    justify-content: center;
+    gap: 7px;
+    color: var(--color-deep-olive);
+    font-family: var(--font-heading);
+    font-size: 21px;
+    line-height: 1;
+}
+
+.contact-prompt-slider__count em {
+    color: var(--color-copper);
+    font-style: normal;
+}
+
+@media (max-width: 1100px) {
+    .contact-prompt-board--editorial .contact-prompt-board__top {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-prompt-board--editorial .prompt-tile {
+        grid-template-columns: 90px minmax(0, 1fr);
+        min-height: 330px !important;
+    }
+
+    .prompt-tile__aside {
+        grid-column: 2;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-content: start;
+        padding-left: 0;
+        padding-top: 18px;
+        border-left: 0;
+        border-top: 1px solid currentColor;
+    }
+
+    .prompt-tile__aside p {
+        width: 100%;
+        margin-bottom: 2px !important;
+    }
+
+    .prompt-tile__aside span {
+        padding: 7px 10px;
+        border: 1px solid currentColor;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 640px) {
+    .contact-prompt-board--editorial .prompt-tile {
+        grid-template-columns: 1fr;
+        min-height: 440px !important;
+        padding: 28px !important;
+    }
+
+    .prompt-tile__side {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 0;
+        padding-bottom: 16px;
+        border-right: 0;
+        border-bottom: 1px solid currentColor;
+    }
+
+    .prompt-tile__side span {
+        font-size: 42px;
+    }
+
+    .prompt-tile__side svg {
+        width: 38px !important;
+        height: 38px !important;
+    }
+
+    .contact-prompt-board--editorial .prompt-tile h3 {
+        font-size: 32px !important;
+    }
+
+    .prompt-tile__aside {
+        grid-column: auto;
+    }
+
+    .contact-prompt-slider__controls {
+        justify-content: space-between;
+    }
+}
+
+/* ===============================
+   CONTACT PROMPT CARD — SOFTER RADIUS + DEPTH + SHINE
+   =============================== */
+
+.contact-prompt-board--editorial .prompt-tile {
+    border-radius: 22px !important;
+    box-shadow:
+        0 18px 40px rgba(36, 41, 30, 0.10),
+        0 6px 16px rgba(36, 41, 30, 0.06) !important;
+    overflow: hidden;
+    position: relative;
+    transition:
+        transform var(--transition-base),
+        box-shadow var(--transition-base);
+}
+
+/* лёгкий внутренний свет */
+.contact-prompt-board--editorial .prompt-tile::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    background:
+        linear-gradient(135deg,
+            rgba(255, 255, 255, 0.22) 0%,
+            rgba(255, 255, 255, 0.10) 18%,
+            rgba(255, 255, 255, 0.03) 36%,
+            transparent 58%);
+    opacity: 0.9;
+}
+
+/* тонкий блеск */
+.contact-prompt-board--editorial .prompt-tile::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    background: linear-gradient(110deg,
+            transparent 0%,
+            rgba(255, 255, 255, 0.08) 24%,
+            rgba(255, 255, 255, 0.18) 34%,
+            rgba(255, 255, 255, 0.06) 44%,
+            transparent 58%);
+    transform: translateX(-120%);
+    transition: transform 0.9s ease;
+}
+
+/* аккуратный hover */
+.contact-prompt-board--editorial .prompt-tile:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 24px 54px rgba(36, 41, 30, 0.14),
+        0 8px 18px rgba(36, 41, 30, 0.08) !important;
+}
+
+.contact-prompt-board--editorial .prompt-tile:hover::after {
+    transform: translateX(120%);
+}

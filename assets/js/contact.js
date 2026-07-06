@@ -409,6 +409,83 @@
         });
     }
 
+    function initializeContactPromptSlider() {
+        const slider = document.querySelector("[data-prompt-slider]");
+
+        if (!slider) {
+            return;
+        }
+
+        const track = slider.querySelector("[data-prompt-track]");
+        const slides = Array.from(track.children);
+        const prev = slider.querySelector("[data-prompt-prev]");
+        const next = slider.querySelector("[data-prompt-next]");
+        const current = slider.querySelector("[data-prompt-current]");
+
+        if (!track || !slides.length || !prev || !next || !current) {
+            return;
+        }
+
+        let index = 0;
+        let startX = 0;
+        let isDragging = false;
+
+        function formatNumber(number) {
+            return String(number).padStart(2, "0");
+        }
+
+        function updateSlider() {
+            track.style.transform = `translateX(-${index * 100}%)`;
+            current.textContent = formatNumber(index + 1);
+        }
+
+        function goNext() {
+            index = (index + 1) % slides.length;
+            updateSlider();
+        }
+
+        function goPrev() {
+            index = (index - 1 + slides.length) % slides.length;
+            updateSlider();
+        }
+
+        next.addEventListener("click", goNext);
+        prev.addEventListener("click", goPrev);
+
+        slider.addEventListener("pointerdown", (event) => {
+            isDragging = true;
+            startX = event.clientX;
+        });
+
+        slider.addEventListener("pointerup", (event) => {
+            if (!isDragging) return;
+
+            const diff = event.clientX - startX;
+
+            if (Math.abs(diff) > 45) {
+                if (diff < 0) {
+                    goNext();
+                } else {
+                    goPrev();
+                }
+            }
+
+            isDragging = false;
+        });
+
+        slider.addEventListener("pointerleave", () => {
+            isDragging = false;
+        });
+
+        updateSlider();
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", initializeContactPromptSlider);
+    } else {
+        initializeContactPromptSlider();
+    }
+
     function refreshAfterInit() {
         if (window.KitchoraGlobal && typeof window.KitchoraGlobal.initializeIcons === "function") {
             window.KitchoraGlobal.initializeIcons();
