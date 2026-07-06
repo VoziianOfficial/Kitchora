@@ -1356,7 +1356,7 @@ p {
     right: 20px;
     bottom: 18px;
     z-index: 1100;
-    width: min(calc(100% - 40px), 980px);
+    width: min(calc(100% - 40px), 990px);
     margin-inline: auto;
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
