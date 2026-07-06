@@ -106,6 +106,65 @@ body[data-page="service-detail"] {
     text-transform: uppercase;
 }
 
+.service-sidebar__toggle {
+    display: none;
+    width: 100%;
+    margin: 2px 0 0;
+    padding: 15px 16px;
+    border: 1px solid rgba(63, 70, 49, 0.16);
+    border-radius: 16px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: rgba(255, 252, 246, 0.94);
+    color: var(--color-deep-olive);
+    box-shadow: none;
+    font: inherit;
+    font-size: 13px;
+    font-weight: 850;
+    letter-spacing: 0.02em;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    transition:
+        border-color var(--transition-base),
+        background var(--transition-base),
+        color var(--transition-base),
+        box-shadow var(--transition-base),
+        transform var(--transition-base);
+}
+
+.service-sidebar__toggle span {
+    display: block;
+}
+
+.service-sidebar__toggle i,
+.service-sidebar__toggle svg {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 auto;
+    color: var(--color-copper);
+    transition: transform var(--transition-base), color var(--transition-base);
+}
+
+.service-sidebar__toggle:hover,
+.service-sidebar__toggle[aria-expanded="true"] {
+    border-color: rgba(111, 118, 82, 0.28);
+    background: rgba(169, 177, 138, 0.14);
+    color: var(--color-deep-olive);
+    box-shadow: 0 14px 28px rgba(36, 41, 30, 0.08);
+}
+
+.service-sidebar__toggle:focus-visible {
+    border-color: var(--color-olive);
+    box-shadow: 0 0 0 4px rgba(169, 177, 138, 0.22);
+}
+
+.service-sidebar__toggle[aria-expanded="true"] i,
+.service-sidebar__toggle[aria-expanded="true"] svg {
+    transform: rotate(180deg);
+}
+
 .service-sidebar__nav {
     display: grid;
     gap: 8px;
@@ -659,6 +718,26 @@ body[data-page="service-detail"] {
 
     .service-sidebar {
         order: 2;
+    }
+
+    .service-sidebar__toggle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+    }
+
+    .service-sidebar__title {
+        margin-bottom: 10px;
+    }
+
+    .service-sidebar__nav {
+        display: none;
+        margin-top: 12px;
+    }
+
+    .service-sidebar__panel.is-open .service-sidebar__nav {
+        display: grid;
     }
 
     .service-detail__content {
