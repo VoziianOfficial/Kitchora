@@ -1799,15 +1799,35 @@ body[data-page="about"] {
 }
 
 @media (max-width: 560px) {
+    .kitchen-before-after,
+    .kitchen-before-after .container {
+        overflow-x: clip;
+    }
+
     .kitchen-before-after__grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
         width: 100%;
+        max-width: 100%;
+        gap: 14px;
     }
 
     .kitchen-before-after__item {
         width: 100%;
+        max-width: 100%;
         flex: 0 0 100%;
+        justify-self: stretch;
         min-height: 340px;
         border-radius: 26px;
+    }
+
+    .kitchen-before-after__item img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .kitchen-before-after__grid [data-aos] {
+        transform: none !important;
     }
 
     .kitchen-before-after__caption {
