@@ -639,6 +639,7 @@ body[data-page="home"] {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 0;
+    padding: 22px;
     border-radius: 34px;
     overflow: hidden;
     box-shadow: var(--shadow-soft);
@@ -1544,6 +1545,7 @@ body[data-page="home"] {
     .popular-services__grid {
         grid-template-columns: 1fr;
         border-radius: 28px;
+        padding: 16px;
     }
 
     .home-service-card,
@@ -1955,8 +1957,13 @@ body[data-page="home"] {
 }
 
 .home-services__grid {
+    display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
+    padding: 22px;
+    border-radius: 34px;
+    background: linear-gradient(180deg, rgba(36, 41, 30, 0.98), rgba(63, 70, 49, 0.92));
+    box-shadow: var(--shadow-soft);
 }
 
 .home-service-card {
@@ -2338,6 +2345,7 @@ body[data-page="home"] {
 
     .home-services__grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 18px;
     }
 
     .home-navigator__panel>img {
