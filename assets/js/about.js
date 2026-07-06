@@ -236,6 +236,81 @@
         }
     }
 
+    function initializeAboutStorySwiper() {
+        const swiper = document.querySelector("[data-about-story-swiper]");
+
+        if (!swiper) {
+            return;
+        }
+
+        const track = swiper.querySelector(".about-story-swiper__track");
+        const slides = Array.from(swiper.querySelectorAll(".about-story-slide"));
+        const prev = document.querySelector("[data-about-story-prev]");
+        const next = document.querySelector("[data-about-story-next]");
+        const current = document.querySelector("[data-about-story-current]");
+        const total = document.querySelector("[data-about-story-total]");
+        const progress = document.querySelector("[data-about-story-progress]");
+
+        if (!track || !slides.length) {
+            return;
+        }
+
+        let activeIndex = 0;
+
+        function getVisibleCount() {
+            return window.innerWidth <= 980 ? 1 : 2;
+        }
+
+        function getMaxIndex() {
+            return Math.max(0, slides.length - getVisibleCount());
+        }
+
+        function updateSwiper(index) {
+            const maxIndex = getMaxIndex();
+
+            activeIndex = Math.max(0, Math.min(index, maxIndex));
+
+            const gap = 18;
+            const slideWidth = slides[0].getBoundingClientRect().width;
+            const offset = activeIndex * (slideWidth + gap);
+
+            track.style.transform = `translateX(-${offset}px)`;
+
+            slides.forEach((slide, slideIndex) => {
+                const isVisible = slideIndex >= activeIndex && slideIndex < activeIndex + getVisibleCount();
+                slide.classList.toggle("is-visible", isVisible);
+                slide.setAttribute("aria-hidden", isVisible ? "false" : "true");
+            });
+
+            if (current) {
+                current.textContent = String(activeIndex + 1).padStart(2, "0");
+            }
+
+            if (total) {
+                total.textContent = String(slides.length).padStart(2, "0");
+            }
+
+            if (progress) {
+                const progressValue = maxIndex === 0 ? 100 : ((activeIndex + getVisibleCount()) / slides.length) * 100;
+                progress.style.width = `${Math.min(100, progressValue)}%`;
+            }
+        }
+
+        prev?.addEventListener("click", () => {
+            updateSwiper(activeIndex - 1);
+        });
+
+        next?.addEventListener("click", () => {
+            updateSwiper(activeIndex + 1);
+        });
+
+        window.addEventListener("resize", () => {
+            updateSwiper(activeIndex);
+        });
+
+        updateSwiper(0);
+    }
+
     function init() {
         initializeAboutHeroNav();
         initializeAboutPrincipleHover();
@@ -245,6 +320,7 @@
         initializeAboutPageSchema();
         initializeAboutMediaTilt();
         initializeAboutRows();
+        initializeAboutStorySwiper();
         refreshAfterInit();
     }
 
